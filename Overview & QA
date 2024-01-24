@@ -1,0 +1,30 @@
+Privileged Account Security (PAS) | Privileged Identity Mangement (PIM)
+CyberArk and Thycotic is also known as 'Delinea'. These two prominent cybersecurity companies that provide Privileged Access Management (PAM) solutions to organizations worldwide. Both CyberArk and Thycotic offer "robust PAM" solutions that help organizations secure their critical systems and sensitive data by managing and monitoring privileged access.
+CyberArk supported platforms: Windows | Saas
+CyberArk PAM Features:-
+- Application Access Control
+- Behavioural Analytics
+- Credential Management
+- Endpoint Management
+- Granular Access Controls
+- Least Privilege
+- Password Management
+- Policy Management
+- Threat Intelligence
+CyberArk Integration:-
+Docker | UiPath | Rublon | AppDynamics | ServiceNow | Splunk Cloud | Chef | Vaonis Data Security Platform
+OneLogin | WinAutomation | insightAppSec | Elastic Observability | CloudBees CI | Nexpose | BackBox
+Powertech Event Manager | SecureLink | Octopus Authenticator | Securonix Next-Gen SIEM | Mandiant Advantage
+IncMan SOAR | Securonix UEBA | Illusive | Phosphorus | Pega Robotic Process Automation
+
+Quiz Q/A:
+PSM records the sessions and stores in Vault. 
+CyberArk authentication password minimum complexity include: {1 lowercase, 1 uppercase, 1 numeric characters}
+Life of object in CyberArk vault before it is actually deleted: {30 days}
+CyberArk can manage passwords stored in the following databases: {MS Sql, Oracle DB, MySQL and DB2}
+Maximum wrong passwords allowed prior access suspension is: {99}
+CyberArk can change password in a text file: {Yes if it is in plain text of encrypted form.}
+{Directory Mapping} is configured to enable LDAP user authentication.
+PSM for SSH have the following capabilities: {Video an sound recording}
+Shortest time for CPM to change/configure password after usage is: { 24 hours}
+{CyberArk Vault} component is used on all cyberArk solutions
