@@ -1,0 +1,7 @@
+Steps for Adding users int "Vault Admins" Groups in client:-
+# Add users to "Vault Admins"
+# Log-in to "PrivateArk Client"
+# Go to #Tools >Administrative Tools >Users and Groups 
+>Under 'system' "Valut Admins" list will be reflecting
+>Select "Update" & add users network ID
+
