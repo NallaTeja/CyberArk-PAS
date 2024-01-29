@@ -7,12 +7,10 @@
 3. [Performing a Manual DR Failover](#performing-a-manual-dr-failover)
 
 
-
-
 ---
 
 **SOP #001** 
-### Adding cyberark Engineer/Administrators to "Vault Admins" Group in PrivateArk Client
+### Adding user to "Vault Admins" Group in PrivateArk Client
 
 ---
 
@@ -88,6 +86,8 @@ In some cases, it may be necessary to trigger a full replication on the Disaster
 
 ## Additional Notes:
 - Triggering a full replication on the DR Vault may resolve issues with replication and ensure data consistency between the primary and DR Vaults.
+
+
 
 ---
 
