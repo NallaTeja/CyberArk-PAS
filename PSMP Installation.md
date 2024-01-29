@@ -1,3 +1,6 @@
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/5bb71dcf-2196-4c58-91a4-ffed588eade7)
+
+
 Here's a revised and corrected version of the installation process for CyberArk PSMP (Privileged Session Manager Proxy):
 
 1. **Download PSMP 11.7 from Secure File Exchange (SFE) Portal:**
