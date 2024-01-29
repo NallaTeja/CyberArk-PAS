@@ -15,6 +15,7 @@ Article Number: 000018324
      ```
      iisreset /stop
      ```
+![onboardingrules01](https://github.com/NallaTeja/MOP-PAS/assets/145950340/9e64e5f2-d0a4-4783-b163-c24f805c5ada)
 
 2. **Log in to PrivateArk Client:**
    - Log in to PrivateArk Client as "Administrator" or a user with "Manage Users" privileges in the root location.
