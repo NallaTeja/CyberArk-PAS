@@ -1,7 +1,33 @@
-Index use cases and vault related SOP
-#001 Steps for Adding Users to "Vault Admins" Group in PrivateArk Client
-#002 How to Trigger a Full Replication on DR Vault (DR Replication)
-#003 How to Perform a Manual DR Failover
+## Index
+
+### Use Cases
+
+1. [Adding Users to "Vault Admins" Group in PrivateArk Client](#adding-users-to-vault-admins-group-in-privateark-client)
+2. [Triggering a Full Replication on DR Vault (DR Replication)](#triggering-a-full-replication-on-dr-vault-dr-replication)
+3. [Performing a Manual DR Failover](#performing-a-manual-dr-failover)
+
+---
+
+**SOP #001** ### Adding Users to "Vault Admins" Group in PrivateArk Client
+
+
+**Description:** Steps for adding users to the "Vault Admins" group in the PrivateArk client.
+
+---
+
+### Triggering a Full Replication on DR Vault (DR Replication)
+**SOP #002**
+
+**Description:** Instructions on how to trigger a full replication on the Disaster Recovery (DR) vault.
+
+---
+
+### Performing a Manual DR Failover
+**SOP #003**
+
+**Description:** Steps to perform a manual Disaster Recovery (DR) failover.
+
+
 
 
 #001 Steps for Adding Users to "Vault Admins" Group in PrivateArk Client
