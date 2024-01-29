@@ -6,31 +6,16 @@
 2. [Triggering a Full Replication on DR Vault (DR Replication)](#triggering-a-full-replication-on-dr-vault-dr-replication)
 3. [Performing a Manual DR Failover](#performing-a-manual-dr-failover)
 
----
-
-**SOP #001** ### Adding Users to "Vault Admins" Group in PrivateArk Client
 
 
-**Description:** Steps for adding users to the "Vault Admins" group in the PrivateArk client.
 
 ---
 
-### Triggering a Full Replication on DR Vault (DR Replication)
-**SOP #002**
-
-**Description:** Instructions on how to trigger a full replication on the Disaster Recovery (DR) vault.
+**SOP #001** 
+### Adding cyberark Engineer/Administrators to "Vault Admins" Group in PrivateArk Client
 
 ---
 
-### Performing a Manual DR Failover
-**SOP #003**
-
-**Description:** Steps to perform a manual Disaster Recovery (DR) failover.
-
-
-
-
-#001 Steps for Adding Users to "Vault Admins" Group in PrivateArk Client
 ## Introduction:
 Adding users to the "Vault Admins" group in the PrivateArk Client grants them administrative privileges within the CyberArk Vault. This guide provides step-by-step instructions for adding users to the "Vault Admins" group.
 
@@ -62,8 +47,13 @@ Adding users to the "Vault Admins" group in the PrivateArk Client grants them ad
 - Exercise caution when granting administrative privileges to users, as they will have access to sensitive vault data and configurations.
 
 
+---
 
-#002 How to Trigger a Full Replication on DR Vault
+**SOP #002**
+### Triggering a Full Replication on DR Vault (DR Replication)
+
+---
+
 Article: https://cyberark.my.site.com/s/article/00005115
 Article Number: 000004199
 ## Introduction
@@ -99,7 +89,13 @@ In some cases, it may be necessary to trigger a full replication on the Disaster
 ## Additional Notes:
 - Triggering a full replication on the DR Vault may resolve issues with replication and ensure data consistency between the primary and DR Vaults.
 
-#003 How to Perform a Manual DR Failover
+---
+
+### Performing a Manual DR Failover
+**SOP #003**
+
+---
+
 Article: https://cyberark.my.site.com/s/article/How-to-perform-a-manual-DR-Failover
 Article Number: 000004249
 ## Introduction
