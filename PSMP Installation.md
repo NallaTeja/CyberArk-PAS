@@ -2,6 +2,7 @@ Here's a revised and corrected version of the installation process for CyberArk 
 
 1. **Download PSMP 11.7 from Secure File Exchange (SFE) Portal:**
    - Visit [SFE Portal](https://support.cyberark/SFE/files.aspx).
+   - https://support.cyberark.com/SFE/
    - Navigate to v11.7 > Latest > CorePAS.
    - Select "Privileged Session Manager SSH Proxy-Rls-11.7.zip" to download.
 
