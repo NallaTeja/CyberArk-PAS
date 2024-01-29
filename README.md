@@ -1,1 +1,1 @@
-All updates & MOP/SOP/Installations/Implementations etc
+All Cyberark updates & Articles/MOP/SOP/Installations/Implementations etc
