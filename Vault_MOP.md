@@ -121,19 +121,18 @@ Performing a manual Disaster Recovery (DR) failover ensures the continuity of Cy
 
 5. **Verify Failover:**
    - Check the `padr.log` located in `\Program Files (x86)\PrivateArk\PADR` to confirm failover completion. The following lines indicate a successful failover:
-
-     ```
-[03/05/2018   09:53:24.939546]    ::    ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 256 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
-[03/05/2018   09:53:26.003988]    ::    ITADM114I Successfully connected to Database, Database id 0.
-[03/05/2018   09:53:26.021747]    ::    PADR0103I Failover process started.
-[03/05/2018   09:53:26.022375]    ::    GetPADRWorkingDirectory returned [C:\Program Files (x86)\PrivateArk\PADR]
-[03/05/2018   09:53:26.022417]    ::    GetPADRWorkingDirectory returned [C:\Program Files (x86)\PrivateArk\PADR]
-[03/05/2018   09:53:26.029175]    ::    PADR0024I Synchronizing vault data and metadata.
-[03/05/2018   09:53:26.186176]    ::    PADR0025I Failover process ended successfully.
-[03/05/2018   09:53:26.186216]    ::    PADR0067I Starting Vault service.
-[03/05/2018   09:53:30.653166]    ::    PADR0017I Failover completed, PADR service is shutting down.
-[03/05/2018   09:53:30.830770]    ::    PADR0022I Disaster Recovery service terminated
-     ```
+```
+[03/05/2018 09:53:24.939546] :: ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 256 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
+[03/05/2018 09:53:26.003988] :: ITADM114I Successfully connected to Database, Database id 0.
+[03/05/2018 09:53:26.021747] :: PADR0103I Failover process started.
+[03/05/2018 09:53:26.022375] :: GetPADRWorkingDirectory returned [C:\Program Files (x86)\PrivateArk\PADR]
+[03/05/2018 09:53:26.022417] :: GetPADRWorkingDirectory returned [C:\Program Files (x86)\PrivateArk\PADR]
+[03/05/2018 09:53:26.029175] :: PADR0024I Synchronizing vault data and metadata.
+[03/05/2018 09:53:26.186176] :: PADR0025I Failover process ended successfully.
+[03/05/2018 09:53:26.186216] :: PADR0067I Starting Vault service.
+[03/05/2018 09:53:30.653166] :: PADR0017I Failover completed, PADR service is shutting down.
+[03/05/2018 09:53:30.830770] :: PADR0022I Disaster Recovery service terminated
+```
 
 6. **Update Vault.ini (if necessary):**
    - If testing component server functionality during the failover test, ensure that the Vault.ini file for each component server contains the IP address of the DR Vault Server.
