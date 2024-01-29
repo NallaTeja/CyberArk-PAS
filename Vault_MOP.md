@@ -121,6 +121,7 @@ Performing a manual Disaster Recovery (DR) failover ensures the continuity of Cy
 
 5. **Verify Failover:**
    - Check the `padr.log` located in `\Program Files (x86)\PrivateArk\PADR` to confirm failover completion. The following lines indicate a successful failover:
+
      ```
 [03/05/2018   09:53:24.939546]    ::    ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 256 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
 [03/05/2018   09:53:26.003988]    ::    ITADM114I Successfully connected to Database, Database id 0.
