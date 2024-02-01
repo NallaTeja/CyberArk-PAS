@@ -21,7 +21,7 @@
     crontab -e
     ```
 
-4. **Configure Cron Jobs**
+4. **Configure Cron Jobs: Retension period 60 days**
     ```cron
     0 3 * * * find /var/opt/CARK/logs/components/old -type f -mtime +60 -exec rm -f {} \;
     0 3 * * * find /var/opt/CARK/logs/components/ -type f -mtime +60 -exec rm -f {} \;
@@ -65,5 +65,3 @@
     find /var/opt/CARK/logs/components/old -type f -mtime +60 -exec rm -f {} \;
     find /var/opt/CARK/logs/components/old -type f -mtime +60 -exec rm -f {} \;
     ```
-
-These revised notes are presented in a professional tone with improved grammar, clearer instructions, and stronger verbs.
