@@ -1,51 +1,81 @@
-To add an alert for the error "APPIC008E failed to get application user session" in a web console log file, you can utilize log monitoring tools or scripts. Here's a general approach using a script:
+# Setting Up Alert for "APPIC008E failed to get application user session" Error in Web Console Log
 
-1. **Script Setup:**
-   Set up a script to monitor the web console log file for occurrences of the error message.
+To set up an alert for the error "APPIC008E failed to get application user session" in the Web Console log file, follow these steps:
 
-2. **Monitoring Logic:**
-   Configure the script to continuously monitor the log file. When it detects the specified error message, trigger an alert.
+1. **Access the Web Console Log File:**
+   - Locate the log file where the error "APPIC008E failed to get application user session" is being recorded.
 
-3. **Alert Mechanism:**
-   Decide how you want to alert upon detection of the error. Options include sending an email, triggering a system notification, or executing another script for further action.
+2. **Identify Monitoring Tools:**
+   - Determine the monitoring tools or platforms you have in place, such as New Relic, that can provide alerting capabilities.
 
-4. **Continuous Monitoring:**
-   Ensure that the script runs continuously in the background to monitor the log file in real-time.
+3. **Create a Query or Rule:**
+   - If using a monitoring tool like New Relic, create a query or rule to filter logs for the specified error message.
 
-Below is a Python script example for monitoring a log file and sending an email alert upon detecting the error message:
+4. **Set Up an Alert Policy:**
+   - Create a new alert policy within your monitoring tool.
+   - Add a condition based on the query or rule created in step 3 to trigger the alert when the error occurs.
 
-```python
+5. **Define Alert Thresholds:**
+   - Define the threshold for triggering the alert, such as the number of occurrences of the error within a specific time frame.
+
+6. **Configure Notification Channels:**
+   - Set up a notification channel within your monitoring tool to send alerts.
+   - Configure the notification channel to send alerts to the Web Console log file.
+
+7. **Test and Validate:**
+   - Test the alert configuration to ensure that it triggers correctly when the error "APPIC008E failed to get application user session" occurs.
+   - Verify that alerts are being sent to the Web Console log file as expected.
+
+By following these steps, you can effectively set up an alert for the specified error in your Web Console log file and ensure timely detection and notification of issues.
+
 import time
-import smtplib
+import re
+import requests
 
-def monitor_log_file(log_file_path, error_message):
+# Function to monitor the log file for errors and trigger alerts
+def monitor_log_file(log_file_path):
+    # Infinite loop to continuously monitor the log file
     while True:
-        with open(log_file_path, 'r') as log_file:
-            for line in log_file:
-                if error_message in line:
-                    send_alert_email()
-        time.sleep(10)  # Adjust sleep time as needed
+        with open(log_file_path, 'r') as file:
+            # Read all lines from the log file
+            log_lines = file.readlines()
 
-def send_alert_email():
-    sender_email = "your_email@example.com"
-    receiver_email = "recipient_email@example.com"
-    password = "your_email_password"
+            # Check each line for the error pattern
+            for line in log_lines:
+                if "APPIC008E failed to get application user session" in line:
+                    # Alert message
+                    alert_message = "Error detected in Web Console log: APPIC008E failed to get application user session"
+                    print(alert_message)  # Print for local debugging
 
-    subject = "Error Alert: APPIC008E"
-    body = "The error 'APPIC008E failed to get application user session' was detected in the web console log file."
+                    # Call function to send alert
+                    send_alert(alert_message)
 
-    message = f"Subject: {subject}\n\n{body}"
+        # Wait for some time before checking the log file again
+        time.sleep(60)  # Adjust interval as needed
 
-    with smtplib.SMTP_SSL('smtp.example.com', 465) as server:
-        server.login(sender_email, password)
-        server.sendmail(sender_email, receiver_email, message)
+# Function to send alerts
+def send_alert(message):
+    # Replace with your actual webhook URL
+    webhook_url = "YOUR_WEBHOOK_URL_HERE"
 
+    # Data to be sent in the alert
+    data = {
+        "text": message
+    }
+
+    # Send POST request to the webhook URL
+    response = requests.post(webhook_url, json=data)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        print("Alert sent successfully!")
+    else:
+        print(f"Failed to send alert. Status code: {response.status_code}")
+
+# Main function to start monitoring the log file
 if __name__ == "__main__":
-    log_file_path = "/path/to/web_console.log"
-    error_message = "APPIC008E failed to get application user session"
-    monitor_log_file(log_file_path, error_message)
-```
+    # Path to the Web Console log file
+    log_file_path = "path/to/your/logfile.log"
 
-Replace `"your_email@example.com"`, `"recipient_email@example.com"`, `"your_email_password"`, and `"/path/to/web_console.log"` with appropriate values for your setup.
-
-This script continuously monitors the specified log file. When it detects the error message, it sends an email alert. You may customize the script according to your specific alerting requirements and preferred alert mechanism.
+    # Call the monitor function
+    monitor_log_file(log_file_path)
