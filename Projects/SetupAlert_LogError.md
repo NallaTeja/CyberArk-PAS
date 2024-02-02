@@ -80,6 +80,7 @@ if __name__ == "__main__":
     # Call the monitor function
     monitor_log_file(log_file_path)
 
+python code 
 
 import time
 import smtplib
