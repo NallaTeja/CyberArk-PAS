@@ -79,3 +79,34 @@ if __name__ == "__main__":
 
     # Call the monitor function
     monitor_log_file(log_file_path)
+
+
+import time
+import smtplib
+
+def monitor_log_file(log_file_path, error_message):
+    while True:
+        with open(log_file_path, 'r') as log_file:
+            for line in log_file:
+                if error_message in line:
+                    send_alert_email()
+        time.sleep(10)  # Adjust sleep time as needed
+
+def send_alert_email():
+    sender_email = "your_email@example.com"
+    receiver_email = "recipient_email@example.com"
+    password = "your_email_password"
+
+    subject = "Error Alert: APPIC008E"
+    body = "The error 'APPIC008E failed to get application user session' was detected in the web console log file."
+
+    message = f"Subject: {subject}\n\n{body}"
+
+    with smtplib.SMTP_SSL('smtp.example.com', 465) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, message)
+
+if __name__ == "__main__":
+    log_file_path = "/path/to/web_console.log"
+    error_message = "APPIC008E failed to get application user session"
+    monitor_log_file(log_file_path, error_message)
