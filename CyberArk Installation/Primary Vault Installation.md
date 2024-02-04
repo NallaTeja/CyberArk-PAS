@@ -37,4 +37,43 @@ Click ```Next``` **Vault Server Machine Hardening** Starts
 **Select Program Folder** and Click ```Next``` 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/72712d6b-9eb4-4478-b9d9-45d31cc1f912)
 
+Set up **Master and Administrator** Account.  Click ```Next``` 
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/6a32eea2-74fc-47b9-b865-c8fc1d23fc9a)
 
+**CAVaultManager database**
+```
+04/02/2024 16:52:37 ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 128 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
+04/02/2024 16:52:38 ITADM114I Successfully connected to Database, Database id 0.
+04/02/2024 16:52:41 CAVLT005I Vault database schema created.
+04/02/2024 16:52:41 ITAQS031I Object cache is loaded.
+04/02/2024 16:52:41 CAVLT007I Vault initial data created.
+04/02/2024 16:52:41 Entered Method CADALHardenVaultDBUsers
+04/02/2024 16:52:41 Before Creating MySQL Replication Users for '' and localhost
+04/02/2024 16:52:41 Enter Method AddPrivilegesToReplicationUser 'ReplicationUser'@'%'
+04/02/2024 16:52:41 After adding privileges to replication use
+04/02/2024 16:52:41 Enter Method AddPrivilegesToReplicationUser 'ReplicationUser'@'127.0.0.1'
+04/02/2024 16:52:41 After adding privileges to replication use
+04/02/2024 16:52:41 After Creating MySQL Replication Users
+04/02/2024 16:52:41 CAVLT051I Vault database access users created successfully.
+04/02/2024 16:52:41 CAVLT013I Vault database creation completed successfully.
+04/02/2024 16:58:21 ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 128 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
+04/02/2024 16:58:22 ITADM114I Successfully connected to Database, Database id 0.
+04/02/2024 16:58:22 Entering Secure DB Procedure
+04/02/2024 16:58:22 Entering Check Vault DB Status
+04/02/2024 16:58:22 CA_VAULT database already created
+04/02/2024 16:58:22 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name .
+04/02/2024 16:58:22 Setting password for user:VaultEmergency
+04/02/2024 16:58:22 Setting password for user:VaultUser
+04/02/2024 16:58:22 Setting password for user:ReplicationUser
+04/02/2024 16:58:22 Setting password for user:ReplicationUser
+04/02/2024 16:59:41 ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 128 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
+04/02/2024 16:59:42 ITADM114I Successfully connected to Database, Database id 0.
+04/02/2024 16:59:42 Entering Secure DB Procedure
+04/02/2024 16:59:42 Entering Check Vault DB Status
+04/02/2024 16:59:42 CA_VAULT database already created
+04/02/2024 16:59:42 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name .
+04/02/2024 16:59:42 Setting password for user:VaultEmergency
+04/02/2024 16:59:42 Setting password for user:VaultUser
+04/02/2024 16:59:42 Setting password for user:ReplicationUser
+04/02/2024 16:59:42 Setting password for user:ReplicationUser
+```
