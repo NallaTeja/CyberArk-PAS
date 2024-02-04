@@ -1,9 +1,11 @@
 Run the **setup** as a ``` Adminsitrator ```
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/88496c81-3095-4bbb-a8d8-a4accff5e750)
----
+
+
 Click ```Next```
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/3696476b-5074-425b-a7f1-ab511d2ea194)
----
+
+
 Select ```Yes```
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/c71e6c32-b3fa-4e59-8562-1f6169b5d369)
 
