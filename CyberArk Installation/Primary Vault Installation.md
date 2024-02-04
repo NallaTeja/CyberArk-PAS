@@ -13,9 +13,12 @@ Click ```Next```
 Select **Standalone Vault Installation**
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/1ec290ae-6e58-49f2-99ce-8b1f8e31049d)
 
-Keep Default **Safe** location. Click ```Next```
+Keep Default **PrivateArk** file location. Click ```Next```
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/d7d33ff4-8d51-464d-9c01-8cebed057797)
 
-Keep Default **Safe** location. Click ```Next```
+Keep Default **Safe** file location. Click ```Next```
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/3bdcd48d-0ed7-45e0-8e8f-42b344c9cf94)
+
+Browse to the **Licence** folder and Click ```Next```
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/c57d25b1-7566-4272-8da3-eb2dd05e3aab)
 
