@@ -92,8 +92,10 @@ Note:- Use complex passwords with a mixture of numeric and mixed case characters
 04/02/2024 16:58:22 CA_VAULT database already created
 04/02/2024 16:58:22 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name.
 04/02/202
+```
 
 Vault server file has been successfuly installed.
+---
 
 Install Client Server
 
