@@ -1,6 +1,7 @@
 # Cyberark Vault Installation Doc v12.0 Guide
-https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1
 ---
+https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1
+
 
 Run the **setup** as an `Administrator`
 
