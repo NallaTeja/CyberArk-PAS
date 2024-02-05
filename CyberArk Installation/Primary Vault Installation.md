@@ -2,6 +2,8 @@
 ---
 [Installation Guide](https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1)
 
+---
+
 Run the **setup** as an `Administrator`
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/88496c81-3095-4bbb-a8d8-a4accff5e750)
@@ -90,3 +92,5 @@ Password: Secur1tyP@ss
 04/02/2024 16:58:22 CA_VAULT database already created
 04/02/2024 16:58:22 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name.
 04/02/202
+
+Vault server file has been successfuly installed.
