@@ -64,6 +64,7 @@ Administrator Account Password: **Secur1tyP@ss**
 
 ```
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
+```
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/6a32eea2-74fc-47b9-b865-c8fc1d23fc9a)
 
