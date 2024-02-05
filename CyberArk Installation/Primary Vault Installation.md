@@ -114,7 +114,7 @@ Click Ok.
 Server Address: 192.168.32.130
 Default User Name: administrator
 Password: Secur1tyP@ss
-![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/9aaf0d4e-7d0a-420c-a6f1-6cd360076f18)
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/36fdaf10-dfd1-497e-9c63-539ce66ad6ce)
 
 Click Ok
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/41345454-3b3f-4e93-a6cd-7b97ce2b480c)
