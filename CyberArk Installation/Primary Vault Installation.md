@@ -125,6 +125,7 @@ Restart the VM. Client server installed successfully.
 Access the PrivateArk 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/36fdaf10-dfd1-497e-9c63-539ce66ad6ce)
 
+
 safes are created
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/1d79a51c-e0c4-430e-94f6-49c3c581315d)
 
