@@ -129,13 +129,14 @@ Access the PrivateArk
 safes are created
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/1d79a51c-e0c4-430e-94f6-49c3c581315d)
 
-Services running
-services.msc
--Cyber-Ark Logic Container
+Services are running
+open cmd enter `services.msc`
+check these services 
+**Cyber-Ark Logic Container
 -Cyber-Ark Event Notification Engine
 -PrivateArk Database
 -PrivateArk Remote Control Agent
--PrivateArk Server
+-PrivateArk Server**
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/7867ac11-d9d7-4949-98e3-584689076522)
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/7887116b-ad83-4c30-bb86-36092630f335)
