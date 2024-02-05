@@ -1,3 +1,7 @@
+# Cyberark Vault Installation Doc v12.0 Guide
+https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1
+---
+
 Run the **setup** as an `Administrator`
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/88496c81-3095-4bbb-a8d8-a4accff5e750)
@@ -52,6 +56,12 @@ Click `Next` **Vault Server Machine Hardening** Starts
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/72712d6b-9eb4-4478-b9d9-45d31cc1f912)
 
 Set up **Master and Administrator** Account.  Click `Next` 
+**Master Account Password Setup:**
+Username: master_user
+Password: P@ssw0rd123
+**Administrator Account Password Setup:**
+Username: admin_user
+Password: Secur1tyP@ss
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/6a32eea2-74fc-47b9-b865-c8fc1d23fc9a)
 
