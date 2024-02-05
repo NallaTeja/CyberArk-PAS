@@ -1,7 +1,6 @@
-# Cyberark Vault Installation Doc v12.0 Guide
+# CyberArk Vault Installation Documentation v12.0 Guide
 ---
-https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1
-
+[Installation Guide](https://docs.cyberark.com/pam-self-hosted/12.0/en/Content/PASIMP/Install-the-CyberArk-Vault-Normal-Installation.htm?tocpath=Installation%7CInstalling%20the%20PAS%C2%A0Solution%7CManual%20Installation%7CEnterprise%20Password%20Vault%7CInstall%20the%20CyberArk%20Vault%7CInstall%20the%20CyberArk%20Vault%20Server%7C_____1)
 
 Run the **setup** as an `Administrator`
 
@@ -32,7 +31,7 @@ Keep Default **Safe** file location. Click `Next`
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/3bdcd48d-0ed7-45e0-8e8f-42b344c9cf94)
 
-Browse to the **Licence** folder and Click `Next`
+Browse to the **License** folder and Click `Next`
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/c57d25b1-7566-4272-8da3-eb2dd05e3aab)
 
@@ -52,7 +51,7 @@ Click `Next` **Vault Server Machine Hardening** Starts
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/2b710e57-96e4-4732-a420-0d435eef8ccb)
 
-**Select Program Folder** and Click `Next` 
+**Select Program Folder** and Click `Next`
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/72712d6b-9eb4-4478-b9d9-45d31cc1f912)
 
@@ -89,11 +88,5 @@ Password: Secur1tyP@ss
 04/02/2024 16:58:22 Entering Secure DB Procedure
 04/02/2024 16:58:22 Entering Check Vault DB Status
 04/02/2024 16:58:22 CA_VAULT database already created
-04/02/2024 16:58:22 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name .
-04/02/2024 16:58:22 Setting password for user:VaultEmergency
-04/02/2024 16:58:22 Setting password for user:VaultUser
-04/02/2024 16:58:22 Setting password for user:ReplicationUser
-04/02/2024 16:58:22 Setting password for user:ReplicationUser
-04/02/2024 16:59:41 ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 128 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
-04/02/2024 16:59:42 ITADM114I Successfully connected to Database, Database id 0.
+04/02/2024 16:58:22 CAVLT132E Password for user Administrator is invalid. Reason: ITAPW001E Password is too similar to the User name.
 04/02/202
