@@ -64,11 +64,10 @@ Administrator Account Password: **Secur1tyP@ss**
 
 ```
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
-```
----
 
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/6a32eea2-74fc-47b9-b865-c8fc1d23fc9a)
 
+---
 ### **CAVaultManager database**
 ```plaintext
 04/02/2024 16:52:37 ITADB399I Using encryption algorithms: Advanced Encryption Standard (AES), 128 bit, RSA (2048 bit), SHA2-512 (Protocol Integrity), SHA2-512 (Files Integrity).
