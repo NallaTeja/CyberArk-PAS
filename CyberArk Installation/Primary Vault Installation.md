@@ -94,3 +94,35 @@ Note:- Use complex passwords with a mixture of numeric and mixed case characters
 04/02/202
 
 Vault server file has been successfuly installed.
+
+Install Client Server
+
+Run the setup as a Administrator.
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/f1842c25-e75f-4925-ac5c-ac3ddab62e21)
+
+Click `Next`.
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/5e8c86a0-c68c-4ab3-a3e2-63b2fe9603aa)
+
+Click `Yes`.
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/014fe257-0fad-45b4-b2dd-8a23d970bb98)
+
+Click Ok.
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/bf931876-ca62-4f34-b4db-edc1d14b7c9f)
+
+Server Address: 192.168.32.130
+Default User Name: administrator
+Password: Secur1tyP@ss
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/9aaf0d4e-7d0a-420c-a6f1-6cd360076f18)
+
+Click Ok
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/41345454-3b3f-4e93-a6cd-7b97ce2b480c)
+
+Restart the VM. Client server installed successfully.
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/437d2862-68cd-42a4-89c2-55507ecac7f9)
+
+Access the PrivateArk 
+
+![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/8fc71272-14fb-480c-834b-ea00edac9389)
+
+
+
