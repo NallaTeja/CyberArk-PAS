@@ -1,1 +1,0 @@
-cat /home/PSMShadowUser/.ssh/known_host | grep -i <ip address>
