@@ -3,6 +3,9 @@ Step 1: Defined IP address, Added to domain controller. Changed the computer nam
 
 Step 2: Installing Pre-Requisites in powershell
 C:\Users\Administrator\Downloads\Privileged Session Manager-Rls-v12.0.2\InstallationAutomation
-~
-Set-ExecutionPolicy 
-~
+
+`
+Set-ExecutionPolicy bypass -scope process
+`
+
+`
