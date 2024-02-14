@@ -1,6 +1,3 @@
-Certainly, I've made corrections and formatted the content to make it more professional. Please note that the URLs in the image tags should be the correct relative paths within your GitHub repository.
-
-```markdown
 # CyberArk Privileged Access Security (PAS) Installation Guide
 
 ## Step 1: System Preparation
