@@ -89,5 +89,3 @@ Execute the following command:
 
 ![PSM Services](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5f123b2-28fc-422c-a08c-85fa510be931)
 ```
-
-Make sure to update the image URLs with the correct relative paths in your GitHub repository.
