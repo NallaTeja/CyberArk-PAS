@@ -36,3 +36,5 @@ File path  ```C:\Windows\System32\drivers\etc```
 
 6. Select the DC and continue
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d6aa85b-de79-495b-aa11-90e80eac547d)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/57b711f2-be5a-420e-95f8-8a8008fae7cf)
