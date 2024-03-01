@@ -3,3 +3,6 @@
 
 2. Enter the Domain detail.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5bcf626f-a891-411e-936a-1340792760c3)
+
+3. Select the DC and continue
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d6aa85b-de79-495b-aa11-90e80eac547d)
