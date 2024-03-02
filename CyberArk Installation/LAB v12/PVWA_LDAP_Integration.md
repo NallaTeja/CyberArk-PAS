@@ -36,5 +36,22 @@ File path  ```C:\Windows\System32\drivers\etc```
 
 6. Select the DC and continue
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d6aa85b-de79-495b-aa11-90e80eac547d)
-
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/57b711f2-be5a-420e-95f8-8a8008fae7cf)
+
+7. Define all the directorys mapping
+Vault Admins
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a5d95af6-eaa6-42c8-8957-2df0ab06804c)
+Safe Managers
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7e60994c-9432-4748-9d06-7c45e4ed53e5)
+Auditors
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/78272ac1-5768-4c15-ac52-2e1fbe11646c)
+Users
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2cc7b045-9b2b-4cc6-8540-2d5d84d30139)
+
+8. Save the summary 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/af4f1851-b37d-48e8-ae36-acd0e482dee4)
+
+9. Validate the LDAP 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4453968c-f2dc-4842-90f7-0314880588c1)
+
+
