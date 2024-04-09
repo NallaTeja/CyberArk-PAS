@@ -1,7 +1,11 @@
 Create PAM AD groups and users in OU
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/551fda40-e19c-4e9f-97d8-bac39ae41994)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/522cad9c-ee08-4513-9caf-115d626365b6)
-Note: While creating the users "User Logon Name" will be the network ID for authentication.
+Note: While creating the users "User Logon Name" will be the network ID for authentication. 
+Following error code fill be prompted if OU details are incorrect AD server.
+ITATS528E Authentication failure for user <username> from station: <IP_Address> (code: -110)
+ITALD002E Failed to perform LDAP operation.(reason connection failed to all hosts of "domain name" ldap directory 
+ITATS527E User or Group "Network ID" has not been defined (Station: "IP_Address")
 
 1.We are going to download CA certificate from Domain Controller server and import into vault server.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb9287b1-59b3-426a-b6b3-f63e2d89c6ba)
