@@ -60,7 +60,8 @@ Users
 8. Save the summary 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/af4f1851-b37d-48e8-ae36-acd0e482dee4)
 
-9. Validate the LDAP 
+9. Validate the LDAP. Login as a user with networkt ID "TN007".
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4453968c-f2dc-4842-90f7-0314880588c1)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/dfdc4c27-6e1e-4b17-ac4a-fed173135c72)
 
 
