@@ -43,7 +43,7 @@ File path  ```C:\Windows\System32\drivers\etc```
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5bcf626f-a891-411e-936a-1340792760c3)
 
 
-6. Select the DC and continue
+6. Select the DC and continue. Note: Port 636 is Defined
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d6aa85b-de79-495b-aa11-90e80eac547d)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/57b711f2-be5a-420e-95f8-8a8008fae7cf)
 
