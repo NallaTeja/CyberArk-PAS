@@ -65,3 +65,79 @@ Users
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/dfdc4c27-6e1e-4b17-ac4a-fed173135c72)
 
 
+Sure, I'll assist you with correcting the alignment and enhancing the language. Here's the revised content:
+
+### Create PAM AD Groups and Users in OU
+
+#### 1. Download CA Certificate from Domain Controller Server and Import into Vault Server
+
+- Proceed to download the CA certificate from the Domain Controller server as shown in the screenshots below:
+
+   ![Download CA Certificate](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb9287b1-59b3-426a-b6b3-f63e2d89c6ba)
+   
+   ![Certificate Download Process](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b584be2a-53e5-477a-9078-8f038580f2d8)
+   
+   ![Certificate Download Confirmation](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/45302054-69f8-40f4-9900-fb64ecacd9e4)
+
+- Next, verify the certificate installation on the Vault server. Navigate through the steps outlined in the screenshots:
+
+   ![Certificate Verification](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5394aa50-5ec7-4fee-806c-55f5abda906b)
+   
+   ![Certificate Verification Process](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0c087a83-9236-40a1-a18c-a3312410db8a)
+
+- Add the Domain Controller host IP address to the Vault server's host file:
+
+   ```
+   # Active Directory Domain controller Host IP address, FQDNS, and DNS.
+   192.168.5.128 ADDC01.corp.devlab.com ADDC01
+   ```
+
+   ![Add Host IP Address](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c8b88c34-6176-444c-8645-75da3682e87f)
+
+#### 2. User Provisioning: LDAP Integration
+
+- Log in to the PVWA console as an Administrator and navigate to **User Provisioning**.
+
+   ![User Provisioning](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/273d7d18-0028-4943-8ff2-e9ff2ef6be76)
+
+- Select **LDAP Integration** and create a **New Domain**.
+
+   ![New Domain Creation](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5bcf626f-a891-411e-936a-1340792760c3)
+
+- Enter the Domain details and select the Domain Controller. Ensure port 636 is defined.
+
+   ![Domain Configuration](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d6aa85b-de79-495b-aa11-90e80eac547d)
+
+#### 3. Define Directory Mappings
+
+- Define directory mappings for various roles:
+
+   - Vault Admins
+   
+     ![Vault Admins Mapping](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a5d95af6-eaa6-42c8-8957-2df0ab06804c)
+   
+   - Safe Managers
+   
+     ![Safe Managers Mapping](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7e60994c-9432-4748-9d06-7c45e4ed53e5)
+   
+   - Auditors
+   
+     ![Auditors Mapping](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/78272ac1-5768-4c15-ac52-2e1fbe11646c)
+   
+   - Users
+   
+     ![Users Mapping](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2cc7b045-9b2b-4cc6-8540-2d5d84d30139)
+
+- Save the summary after configuring all mappings.
+
+   ![Save Summary](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/af4f1851-b37d-48e8-ae36-acd0e482dee4)
+
+#### 4. Validate LDAP
+
+- Log in as a user with the network ID "TN007" and validate LDAP integration.
+
+   ![LDAP Validation](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4453968c-f2dc-4842-90f7-0314880588c1)
+   
+   ![LDAP Validation Process](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/dfdc4c27-6e1e-4b17-ac4a-fed173135c72)
+
+Make sure to adjust the formatting as necessary, and feel free to add any additional adverbs or strong language to enhance clarity and emphasis.
