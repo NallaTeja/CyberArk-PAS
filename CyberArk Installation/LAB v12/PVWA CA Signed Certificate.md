@@ -39,6 +39,7 @@ Open the CSR file in notepad and copy it.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0d306562-33a4-4e58-9377-e9286c503899)
 
 ~~
+
 -----BEGIN NEW CERTIFICATE REQUEST-----
 MIIEADCCAugCAQAwXzESMBAGA1UECQwJSHlkZXJhYmFkMQswCQYDVQQIDAJUUzEP
 MA0GA1UECgwGZGV2bGFiMQswCQYDVQQGEwJJTjEeMBwGA1UEAwwVUFZXQUNQTTAz
@@ -63,6 +64,7 @@ t79cuMjmQuUUOnFZCmBx72kQ3MSlFEWhdENvap2AzLU5uYi3w85sFmegj4ATGW5M
 kqEvWfh6pTA6Ec4mC4E4DLY4aH27QXA16OhST//FXc9TMpjz/6FKVLYsoEP819mP
 ZbVIwPOmvV0Egf5YZkREtq8pr6k=
 -----END NEW CERTIFICATE REQUEST-----
+
 ~~
 
 open AD cert in pvwa server ~addc01/certsrv~ give the DC server admin credentials (Username: administrator and pwd: Tej@143!!)
@@ -80,9 +82,27 @@ Paste the CSR, change certificate template as 'Web Server' and submit.
 Now dowload the certificate
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a73763ef-50ae-41ff-b0e5-0a4b3d339cf8)
 
-Open the downloaded certificate and install it
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/abb9807e-ac96-420f-a806-c07ebfa8431c)
+Open the downloaded certificate and install Certificate in local machine.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/831de2cc-b0a3-42d1-aca4-24033d255478)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/abb9807e-ac96-420f-a806-c07ebfa8431c)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80879b5c-94ab-4a6f-849c-07a93b3cf399)
 
+Place all the certificates, browse & select "personal". 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e37636e5-5e19-4ff2-b691-21970ce6c893)
 
+Complete the certificate import Wizard.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9572ecbc-b8c6-4d9d-a576-eeb4d2be581d)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4c419a58-91ba-410a-86c7-ca756aacb97b)
+
+Validate the certificate import by opening the certlm.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b769746a-caea-4fe8-bc50-dfd4807f0c1c)
+
+Open the IIS Manager
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b828f41c-4634-431b-9333-2e7aa359b766)
+
+change the 'Default Web site' with new SSL certificate "PVWACPM03.corp.devlab".
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7b38a92c-f1eb-45f6-ba74-4275c4b931f1)
+
+Reset the IIS service ~iisreset~ .
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/88765895-1dcb-4ea7-b305-20b9647579d4)
 
