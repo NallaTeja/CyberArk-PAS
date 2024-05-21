@@ -46,8 +46,8 @@ Select the program folder, click Next. The Digital Vault Machine Hardening start
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0fd1a15d-7d22-4292-a0f0-a5123d629981)
 
-Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator Account Password: Secur1tyP@ss.
-~~ Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters~~
+Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator Account Password: Secur1tyP@ss
+Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/95c74421-8dc7-44cb-b3af-30aea317de0b)
@@ -55,7 +55,7 @@ Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/bacb6e24-c349-455b-8545-0325440dbf67)
 
-Note: Before installing the cyberark any components make sure windows is up to date windows updated.
+Note: Before installing the cyberark any components make sure windows updated.
 
 
 
