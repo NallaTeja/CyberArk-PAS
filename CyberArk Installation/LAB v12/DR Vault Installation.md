@@ -17,6 +17,34 @@ Accept the license agreement, click yes
 Give User information like Name and company
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2b02815b-8ef5-4ff0-a477-e8a8461cdf9d)
 
+Select vault mode as 'Standalone Vault Installation'
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/88a62b7b-578e-42c0-a1c4-1657766b3020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
