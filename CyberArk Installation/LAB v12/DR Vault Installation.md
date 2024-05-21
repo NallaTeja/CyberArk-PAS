@@ -20,14 +20,42 @@ Give User information like Name and company
 Select vault mode as 'Standalone Vault Installation'
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/88a62b7b-578e-42c0-a1c4-1657766b3020)
 
+Select folder where setup will install files.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6380ecf5-a294-440a-9fd3-a7df802e79b7)
 
+Choose folder for storing the safes.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/311e485e-3e4d-4a1f-bfa5-0f06c815c784)
 
+Enter License .xml file path
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/911d334e-a874-4032-9ff4-d930b1f9ca13)
 
+Enter Operator CD path.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/452b80f8-1648-407e-83b0-e581a1b691e3)
 
+Configure remote control Agent i.e, PVWA server IP ~192.168.5.130~ and password ~Tej@143~.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/06a68fd5-0207-41c0-b5a7-139811d18c52)
 
+Uncheck the ~"Distribute vaults"~. we are installing RabbitMQTM. 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/120c55cd-a77b-4f72-beb9-c5616e29d813)
 
+Vault server machine hardening
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6d1723b4-cf65-4c8d-a2d6-d960a9e5aa53)
 
+Select the program folder, click Next. The Digital Vault Machine Hardening starts after some time private ark database setup will intall .
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa92be0d-2391-400c-a469-24298085b9c9)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0fd1a15d-7d22-4292-a0f0-a5123d629981)
 
+Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator Account Password: Secur1tyP@ss.
+~~ Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters~~
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/95c74421-8dc7-44cb-b3af-30aea317de0b)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a62356b1-090a-4061-90d0-145162e63014)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/bacb6e24-c349-455b-8545-0325440dbf67)
+
+Note: Before installing the cyberark any components make sure windows is up to date windows updated.
 
 
 
