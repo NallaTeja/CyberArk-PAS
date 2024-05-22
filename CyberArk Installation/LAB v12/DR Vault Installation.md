@@ -215,13 +215,23 @@ The disaster recovery service got stopped. Privateark server service start runni
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fe1823e8-8cde-49c4-a9f7-5c3485f4f61a)
 
 Login into the PVWA UI check the failover.
-Before that we need to update DRvault IP address in vault.ini file 
+Before that we need to update DRvault IP address in **vault.ini** file 
 ```
-C:\Program Files (x86)\CyberArk\Password Manager\Vault
+C:\CyberArk\Password Vault Web Access\VaultInfo
 ```
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/05023276-4b66-47fb-88e2-8076b95ae4e6)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f71b7606-b8f1-41a5-a177-b7de877c1dc2)
 
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fe905565-e052-4897-8c36-854e625ab9ff)
+Do iisreset and check if you are able to login into the pvwa.
+```
+iisreset
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4707e8c8-8e32-4aa7-b2cd-49585ee03d95)
+
+Successfully able to access the pvwa as a administrator
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/01479224-8927-459d-9a50-be90771f93cc)
+
+
+# Fall back from DRvault to Primary Vault. 
 
 Stop the privateark server service
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
