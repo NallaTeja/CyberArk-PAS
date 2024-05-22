@@ -59,8 +59,14 @@ Click `Next` **Vault Server Machine Hardening** Starts
 
 Set up Master and Administrator Account. Click Next
 
-Master Account Password: ```P@ssw0rd123```
-Administrator Account Password: ```Secur1tyP@ss```
+Master Account Password: 
+```
+P@ssw0rd123
+```
+Administrator Account Password: 
+```
+Secur1tyP@ss
+```
 
 ```
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
@@ -111,7 +117,7 @@ Click `Yes`.
 Click Ok.
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/bf931876-ca62-4f34-b4db-edc1d14b7c9f)
 
-Server Address: 192.168.32.130
+Server Address: 192.168.5.129
 Default User Name: administrator
 Password: Secur1tyP@ss
 ![image](https://github.com/NallaTeja/MOP-PAS/assets/145950340/36fdaf10-dfd1-497e-9c63-539ce66ad6ce)
