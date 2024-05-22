@@ -104,9 +104,11 @@ Notification Engine, System, VaultInternal
 Before Installing DR Vault. Below are the basic info of the status.
 
 System Health
+
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/00e073ff-8660-46d9-9260-5ab6e0ba6e2e)
 
 PrivateArk safe
+
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c93c22cd-6095-47da-a7d2-9fd1495d967f)
 
 
