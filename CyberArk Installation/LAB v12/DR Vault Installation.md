@@ -208,6 +208,21 @@ Get-Content .\logs\padr.log -wait
 After 5 attempts of failure, the data will be syncronized and DR failover will completed successfully.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/64c522e9-b056-4496-9dd0-7bb672b93cfc)
 
+Login into the privateark client of DR vault check the replication.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d3193044-c6f4-4c46-8d0c-22fd51216e7b)
+
+The disaster recovery service got stopped. Privateark server service start running
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fe1823e8-8cde-49c4-a9f7-5c3485f4f61a)
+
+Login into the PVWA UI check the failover.
+Before that we need to update DRvault IP address in vault.ini file 
+```
+C:\Program Files (x86)\CyberArk\Password Manager\Vault
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/05023276-4b66-47fb-88e2-8076b95ae4e6)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fe905565-e052-4897-8c36-854e625ab9ff)
+
 Stop the privateark server service
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/28c3a774-9558-462e-9322-ae6e6ef854a7)
