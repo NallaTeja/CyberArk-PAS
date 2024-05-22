@@ -68,14 +68,28 @@ Fill the user information
 Choose the setup intallation path of PrivateArk client
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2436314-7a57-4795-8bbf-436db62e34a5)
 
+Select client setup type
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2dfe98d8-e739-45da-adf0-ecc63d23149c)
 
+Select the program folder
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0102767f-1d35-45d6-abce-8a2b50ceccce)
 
+Define the PrivateArk vault
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a9044107-1202-42d0-9a7b-5c086d3424b8)
 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/cc501682-877a-4635-9352-82246071ff28)
 
+Setup Complete.  click yes for restart.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fdad2b1c-eced-4f16-bacb-e0c3f96ed604)
 
+# Validation
+1. Log into the privateArk client. Following safe will be created.
+Notification Engine, System, VaultInternal
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8f8d4232-1b22-4b99-8562-d3fa692e2d02)
 
-
-
+2. Check the services are running
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8c6d6612-28c5-4d0f-92af-8a4e10b46e51)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5658617-46e1-470b-9636-8a84e39fb708)
 
 
 
