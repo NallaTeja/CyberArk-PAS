@@ -155,20 +155,58 @@ Finish the setup complete.
 
 Check the logs and verfiy the replication complete. Run the PADR.exe file, open the PADR log file.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/744908ae-e8b7-4e4d-95c7-66ff1aea6311)
+
 ```
 C:\Program Files (x86)\PrivateArk\PADR\Logs
 ```
+
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/11de9334-e156-4cbd-9bf0-8fe43cc52081)
 
-Also verfiy the PADR configuration file.
+Also verfiy the PADR configuration file where **Failovermode = No**
 ```
 C:\Program Files (x86)\PrivateArk\PADR\Conf
 ```
+
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d0fa3bb-8e8d-41d1-9b4b-606ee2b28dda)
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9bdd3f06-4740-41ad-9be7-1d306fc4f623)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/21b79174-41a1-4156-ad34-21f5e803d569)
 
+# We gone test wheather DR is replicating the safes.
+Open Primary Valut privateark client login as administrator. open Tools > Administrative Tools > Users and Groups on Server Valut. Select the New> User.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a3787c49-db2d-4fea-b6db-5b0e59172bfe)
+
+Give User Name and password
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8849014f-91f8-40bf-b562-e25d43957d00)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4731d6b0-049e-4f78-b1a2-ddaf6d49b02e)
+
+Create a new safe via PVWA UI in adminsitator credentials. 
+Policies> Access Control > Add Safe
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/74904cc6-14af-471f-a613-74beadc45aa4)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b6b9b2d5-d4cf-4a01-947c-27c8fe16798d)
+
+Add Member in the safe.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1908ba54-c1bf-4201-85e5-5df12e3659f0)
+
+Verify the safe is created in primary vault
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b8632172-5231-49b5-86b1-1fd881bfe729)
+
+# Now we are going to test the automatic DR failover.
+Step1: stop Primary vault privateark server service via privateark server.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/24c285a4-0469-4bec-97a8-01028dafddcf)
+
+Step2: Log into the DRVault. Open powershell as administrator, run below commands. 
+```
+cd "C:\Program Files (x86)\PrivateArk\PADR"
+```
+```
+Get-Content .\logs\padr.log -wait
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4ebce1fb-6a06-41d0-b3b7-5afeabf9f84d)
+
+After 5 attempts of failure, the data will be syncronized and DR failover will completed successfully.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/64c522e9-b056-4496-9dd0-7bb672b93cfc)
 
 Stop the privateark server service
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
