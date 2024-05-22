@@ -48,15 +48,25 @@ Select the program folder, click Next. The Digital Vault Machine Hardening start
 
 Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator Account Password: Secur1tyP@ss
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
+
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
 
 After successful install the system will restart.
 
+Now start the client set up installation as a adminsitrator.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb028733-e0a5-429e-b625-6e6ab57da02b)
 
+Setup the privarteArk Client
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8566d4fc-b3ad-4df4-bd3d-f23ee69b9480)
 
+Accept the License Agreement
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/55759066-d74b-44fe-9b34-c3c746d54d1f)
 
+Fill the user information
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4e7c7679-d33f-40cb-a215-68ecc677827d)
 
-
+Choose the setup intallation path of PrivateArk client
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2436314-7a57-4795-8bbf-436db62e34a5)
 
 
 
