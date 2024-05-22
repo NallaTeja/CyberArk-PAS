@@ -50,13 +50,7 @@ Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
 
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/95c74421-8dc7-44cb-b3af-30aea317de0b)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a62356b1-090a-4061-90d0-145162e63014)
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/bacb6e24-c349-455b-8545-0325440dbf67)
-
-Note: Before installing the cyberark any components make sure windows updated.
-
+After successful install the system will restart.
 
 
 
