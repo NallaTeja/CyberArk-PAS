@@ -59,8 +59,8 @@ Click `Next` **Vault Server Machine Hardening** Starts
 
 Set up Master and Administrator Account. Click Next
 
-Master Account Password: **P@ssw0rd123**
-Administrator Account Password: **Secur1tyP@ss**
+Master Account Password: ```P@ssw0rd123```
+Administrator Account Password: ```Secur1tyP@ss```
 
 ```
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
