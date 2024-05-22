@@ -114,6 +114,62 @@ PrivateArk safe
 
 Installion of DR vault
 
+Log into the Primary vault open privateArk client update the DR user, uncheck the **Disble user** for DR user profile. and update the password.
+```
+Tej@143
+```
+
+Stop the privateArk server service
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3c6d0995-bc8b-441e-a967-4514248cfcda)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e1dc9fd9-3663-4f41-a60d-d13645c260f3)
+
+Install the PADR component in primary vault.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/828cd88b-b6dc-4af8-a9e0-9fc730374ebc)
+
+Setup the Cyberark Vault Disaster Recovery.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/34d7d513-0de1-4edd-97b2-f66aca521fc0)
+
+Accept the License Agreement
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40fddcd8-6245-4900-af1f-bc6355e195da)
+
+Fill the user information.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
+
+Choose Destination Location
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80381ed6-5dad-468c-b916-85b14a65a196)
+
+User: **DR**
+Password:
+```
+Tej@143
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/65a58c6d-77c9-47e8-a265-4f236aaab899)
+
+
+Replicate Vault Details, Address ```192.168.5.129``` and Port ```1858```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a6927b47-ed21-4bbe-a39a-06bb75a918b7)
+
+Finish the setup complete.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e11f814c-9833-4b77-949c-5ce1aef3f2ca)
+
+Check the logs and verfiy the replication complete. Run the PADR.exe file, open the PADR log file.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/744908ae-e8b7-4e4d-95c7-66ff1aea6311)
+```
+C:\Program Files (x86)\PrivateArk\PADR\Logs
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/11de9334-e156-4cbd-9bf0-8fe43cc52081)
+
+Also verfiy the PADR configuration file.
+```
+C:\Program Files (x86)\PrivateArk\PADR\Conf
+```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d0fa3bb-8e8d-41d1-9b4b-606ee2b28dda)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9bdd3f06-4740-41ad-9be7-1d306fc4f623)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/21b79174-41a1-4156-ad34-21f5e803d569)
+
+
 Stop the privateark server service
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/28c3a774-9558-462e-9322-ae6e6ef854a7)
@@ -134,11 +190,14 @@ Choose Destination Location
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80381ed6-5dad-468c-b916-85b14a65a196)
 
 Replicate User details
+
 User: **DR**
 Password:
 ```
 Tej@143
 ```
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/65a58c6d-77c9-47e8-a265-4f236aaab899)
+
 
 Replicate Vault Details, Address and Port.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4b5432a2-d49b-49b1-a879-116d8f2fbcbf)
@@ -155,6 +214,17 @@ Log into the DR vault server and change the DR user password which need to be ma
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/04cbc030-cc09-476a-b12b-b5b539a3370d)
 
 
+
+
+
+
+
+
+
+
+
+PVWA system health. we can see the all components Primary & DR vault and other commonents.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
 
 
 
