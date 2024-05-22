@@ -35,7 +35,7 @@ Enter Operator CD path.
 Configure remote control Agent i.e, PVWA server IP ~192.168.5.130~ and password ~Tej@143~.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/06a68fd5-0207-41c0-b5a7-139811d18c52)
 
-Uncheck the ~"Distribute vaults"~. we are installing RabbitMQTM. 
+Uncheck the "Distribute vaults". we are installing RabbitMQTM. 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/120c55cd-a77b-4f72-beb9-c5616e29d813)
 
 Vault server machine hardening
@@ -46,7 +46,15 @@ Select the program folder, click Next. The Digital Vault Machine Hardening start
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0fd1a15d-7d22-4292-a0f0-a5123d629981)
 
-Set built-in Users Passwords. Master Account Password: P@ssw0rd123 Administrator Account Password: Secur1tyP@ss
+Set built-in Users Passwords. Master Account Password: 
+```
+P@ssw0rd123
+```
+Administrator Account Password: 
+```
+Secur1tyP@ss
+```
+
 Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
@@ -93,7 +101,13 @@ Notification Engine, System, VaultInternal
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5658617-46e1-470b-9636-8a84e39fb708)
 
 
+Before Installing DR Vault. Below are the basic info of the status.
 
+System Health
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/00e073ff-8660-46d9-9260-5ab6e0ba6e2e)
+
+PrivateArk safe
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c93c22cd-6095-47da-a7d2-9fd1495d967f)
 
 
 
