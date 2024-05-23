@@ -1,3 +1,6 @@
+Index 
+- [Setup the privarteArk Client](#Setup-the-privarteArk-Client)
+
 Install the .Net framework 4.8 or latest version. & Microsoft VS x64 & x86
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
 
