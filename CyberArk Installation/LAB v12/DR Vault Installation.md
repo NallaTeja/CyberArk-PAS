@@ -283,9 +283,9 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
 
 
-Certainly! Here is the corrected and updated README with the additional steps for installing the DR Vault and testing the DR failover:
 
-```markdown
+
+
 # CyberArk PAS Installation Guide
 
 ## Step-by-Step Instructions
