@@ -284,7 +284,7 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 
 
 # Index
-- [Install Prerequisistes](#step-1-Install-Prerequisites)
+- [Install Prerequisistes](#step-1-:-Install-Prerequisites)
 - [Client Setup](#step-9-start-client-setup)
 - [DR Setup Vault](#installation-of-dr-vault)
 - [Failover Test](#validation)
@@ -293,7 +293,7 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 
 ## Step-by-Step Instructions
 
-### Step 1: Install Prerequisites(#Step-1-Install-Prerequisites)
+### Step 1: Install Prerequisistes
 Install .NET Framework 4.8 or the latest version.
 Install Microsoft Visual Studio x64 and x86.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
@@ -306,7 +306,7 @@ Install Microsoft Visual Studio x64 and x86.
 ![Enable TCP/IPv4](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ed380242-cb44-45d8-91ed-927174db68bf)
 
 
-### [Step 3: Run Server Setup](#step-3-run-server-setup)
+### [Step 3: Run Server Setup]
 
 - Navigate to the server file.
 - Run the setup as **Administrator**.
