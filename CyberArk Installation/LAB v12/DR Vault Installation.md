@@ -279,18 +279,194 @@ Log into the DR vault server and change the DR user password which need to be ma
 
 
 
-
-
-
-
-
-
-
 PVWA system health. we can see the all components Primary & DR vault and other commonents.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
 
 
+Here's the corrected and enhanced version of your notes for GitHub:
 
+---
+
+# CyberArk PAS Installation Guide
+
+## Step-by-Step Instructions
+
+### Step 1: Configure Network Protocols
+
+- **Disable all protocols** except for **TCP/IPv4**.
+
+![Disable Protocols](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d56b2f67-b5af-460b-9ef7-5f0f6dd0ead0)
+![Enable TCP/IPv4](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ed380242-cb44-45d8-91ed-927174db68bf)
+
+### Step 2: Install Prerequisites
+
+- Install **.NET Framework 4.8** or the latest version.
+- Install **Microsoft Visual Studio x64 and x86**.
+
+![Install .NET Framework](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
+
+### Step 3: Run Server Setup
+
+- Navigate to the server file.
+- Run the setup as **Administrator**.
+
+![Run Setup](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e3e04327-83b6-4c59-96b4-e9a5c0e25527)
+
+### Step 4: Setup Wizard
+
+- Click **Next** in the setup program.
+
+![Click Next](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/38ef4c46-12f1-4964-ab42-93f6c592218b)
+
+- Accept the license agreement and click **Yes**.
+
+![Accept License](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/34d22c97-6d22-497e-9344-f6d1eb05532c)
+
+- Provide user information (Name and Company).
+
+![User Information](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2b02815b-8ef5-4ff0-a477-e8a8461cdf9d)
+
+- Select **Vault Mode** as **Standalone Vault Installation**.
+
+![Standalone Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/88a62b7b-578e-42c0-a1c4-1657766b3020)
+
+- Choose the installation folder.
+
+![Installation Folder](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6380ecf5-a294-440a-9fd3-a7df802e79b7)
+
+- Select the folder for storing the safes.
+
+![Storage Folder](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/311e485e-3e4d-4a1f-bfa5-0f06c815c784)
+
+- Enter the license `.xml` file path.
+
+![License Path](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/911d334e-a874-4032-9ff4-d930b1f9ca13)
+
+- Enter the operator CD path.
+
+![Operator CD Path](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/452b80f8-1648-407e-83b0-e581a1b691e3)
+
+### Step 5: Configure Remote Control Agent
+
+- Configure the remote control agent (PVWA server IP: `192.168.5.130` and password: `Tej@143`).
+
+![Remote Control Agent](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/06a68fd5-0207-41c0-b5a7-139811d18c52)
+
+- Uncheck **Distribute Vaults** (RabbitMQTM will be installed).
+
+![Uncheck Distribute Vaults](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/120c55cd-a77b-4f72-beb9-c5616e29d813)
+
+### Step 6: Vault Server Machine Hardening
+
+- Select the program folder and click **Next**. Digital Vault Machine Hardening will start, followed by the installation of the Private Ark Database Setup.
+
+![Hardening Start](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa92be0d-2391-400c-a469-24298085b9c9)
+![Private Ark Setup](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
+
+### Step 7: Set Built-in Users Passwords
+
+- Set the following passwords:
+  - Master Account Password: `P@ssw0rd123`
+  - Administrator Account Password: `Secur1tyP@ss`
+
+**Note:** Use complex passwords with a mixture of numeric and mixed case characters.
+
+![Set Passwords](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
+
+### Step 8: Restart System
+
+- After successful installation, the system will restart.
+
+### Step 9: Start Client Setup
+
+- Run the client setup installation as **Administrator**.
+
+![Client Setup](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb028733-e0a5-429e-b625-6e6ab57da02b)
+
+- Set up the PrivateArk Client.
+
+![PrivateArk Client](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8566d4fc-b3ad-4df4-bd3d-f23ee69b9480)
+
+- Accept the license agreement.
+
+![Accept License](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/55759066-d74b-44fe-9b34-c3c746d54d1f)
+
+- Fill in user information.
+
+![User Information](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4e7c7679-d33f-40cb-a215-68ecc677827d)
+
+- Choose the setup installation path of PrivateArk client.
+
+![Installation Path](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2436314-7a57-4795-8bbf-436db62e34a5)
+
+- Select the client setup type.
+
+![Setup Type](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2dfe98d8-e739-45da-adf0-ecc63d23149c)
+
+- Select the program folder.
+
+![Program Folder](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0102767f-1d35-45d6-abce-8a2b50ceccce)
+
+- Define the PrivateArk Vault.
+
+![Define Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a9044107-1202-42d0-9a7b-5c086d3424b8)
+
+- Click **Yes** for restart upon setup completion.
+
+![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fdad2b1c-eced-4f16-bacb-e0c3f96ed604)
+
+## Validation
+
+1. **Log into the PrivateArk Client:** Ensure the following safes are created: Notification Engine, System, VaultInternal.
+
+![Created Safes](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8f8d4232-1b22-4b99-8562-d3fa692e2d02)
+
+2. **Check Services:** Verify that the services are running.
+
+![Check Services](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8c6d6612-28c5-4d0f-92af-8a4e10b46e51)
+![Check Services](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5658617-46e1-470b-9636-8a84e39fb708)
+
+## Pre-Installation Check for DR Vault
+
+- **System Health:**
+
+![System Health](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/00e073ff-8660-46d9-9260-5ab6e0ba6e2e)
+
+- **PrivateArk Safe:**
+
+![PrivateArk Safe](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c93c22cd-6095-47da-a7d2-9fd1495d967f)
+
+## Installation of DR Vault
+
+1. **Update DR User in Primary Vault:**
+   - Log into the primary vault,
+
+ and update the DR user with the name `PVWAAppUser`.
+
+![Update DR User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a70d46a7-c5b4-4670-bba6-e9877607a24d)
+
+2. **Initialize Vault Wizard:**
+   - Enter details and complete the process as per the steps outlined in the provided [PDF](https://github.com/NallaTeja/CyberArk-PAS/blob/main/CyberArk%20PAS%20DR%20Vault%20Installation.pdf).
+
+3. **Install RabbitMQ:**
+
+![Install RabbitMQ](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3192ff1c-e8cf-41e1-9b4a-c2ee1a12a781)
+
+4. **Check for DR Vault Success:**
+
+![DR Vault Success](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0503202a-52a3-4030-94b0-6e8e1557b738)
+
+5. **Reboot Server:**
+   - Validate that all configurations are applied successfully.
+
+### Final Steps
+
+- **Confirm Connections:** Ensure that the primary and DR vaults are in sync.
+- **Monitor Systems:** Regularly check system health and logs for any anomalies.
+
+---
+
+Feel free to modify further or ask for additional information!
 
 
 
