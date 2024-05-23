@@ -284,8 +284,12 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 
 
 
-
-
+# Index
+- [Server Setup](#step-3-run-server-setup)
+- [Client Setup](#step-9-start-client-setup)
+- [DR Setup Vault](#installation-of-dr-vault)
+- [Failover Test](#validation)
+  
 # CyberArk PAS Installation Guide
 
 ## Step-by-Step Instructions
