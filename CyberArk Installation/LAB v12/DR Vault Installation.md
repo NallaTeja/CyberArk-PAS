@@ -285,21 +285,27 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 
 
 # Index
-- [Server Setup](#step-3-run-server-setup)
+- [Server Setup](#step-1-Install-Prerequisites)
 - [Client Setup](#step-9-start-client-setup)
 - [DR Setup Vault](#installation-of-dr-vault)
 - [Failover Test](#validation)
   
-# CyberArk PAS Installation Guide
+# CyberArk Disaster Recovery Vault Installation Guide
 
 ## Step-by-Step Instructions
 
-### Step 1: Configure Network Protocols
+### Step 1: Install Prerequisites(#step-1-Install-Prerequisites)
+Install .NET Framework 4.8 or the latest version.
+Install Microsoft Visual Studio x64 and x86.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
+
+### Step 2: Configure Network Protocols
 
 - **Disable all protocols** except for **TCP/IPv4**.
 
 ![Disable Protocols](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d56b2f67-b5af-460b-9ef7-5f0f6dd0ead0)
 ![Enable TCP/IPv4](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ed380242-cb44-45d8-91ed-927174db68bf)
+
 
 ### [Step 3: Run Server Setup](#step-3-run-server-setup)
 
