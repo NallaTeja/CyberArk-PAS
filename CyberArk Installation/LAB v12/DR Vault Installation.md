@@ -1,5 +1,5 @@
 Index 
-- [Setup the privarteArk Client](#Setup-the-privarteArk-Client)
+- [Setup the privarteArk Client1](#Setup-the-privarteArk-Client1)
 
 Install the .Net framework 4.8 or latest version. & Microsoft VS x64 & x86
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
@@ -63,7 +63,7 @@ After successful install the system will restart.
 Now start the client set up installation as a adminsitrator.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb028733-e0a5-429e-b625-6e6ab57da02b)
 
-Setup the privarteArk Client
+## Setup the privarteArk Client1
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8566d4fc-b3ad-4df4-bd3d-f23ee69b9480)
 
 Accept the License Agreement
