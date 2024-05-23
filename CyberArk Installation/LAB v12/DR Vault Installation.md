@@ -290,7 +290,7 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 
 ## Step-by-Step Instructions
 
-### Step 1: Install Prerequisites(#step-1-Install-Prerequisites)
+### Step 1: Install Prerequisites(#Step-1-Install-Prerequisites)
 Install .NET Framework 4.8 or the latest version.
 Install Microsoft Visual Studio x64 and x86.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
