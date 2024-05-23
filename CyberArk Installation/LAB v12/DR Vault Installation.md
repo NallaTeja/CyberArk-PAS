@@ -283,10 +283,9 @@ PVWA system health. we can see the all components Primary & DR vault and other c
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
 
 
-Here's the corrected and enhanced version of your notes for GitHub:
+Certainly! Here is the corrected and updated README with the additional steps for installing the DR Vault and testing the DR failover:
 
----
-
+```markdown
 # CyberArk PAS Installation Guide
 
 ## Step-by-Step Instructions
@@ -298,14 +297,7 @@ Here's the corrected and enhanced version of your notes for GitHub:
 ![Disable Protocols](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d56b2f67-b5af-460b-9ef7-5f0f6dd0ead0)
 ![Enable TCP/IPv4](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ed380242-cb44-45d8-91ed-927174db68bf)
 
-### Step 2: Install Prerequisites
-
-- Install **.NET Framework 4.8** or the latest version.
-- Install **Microsoft Visual Studio x64 and x86**.
-
-![Install .NET Framework](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
-
-### Step 3: Run Server Setup
+### [Step 3: Run Server Setup](#step-3-run-server-setup)
 
 - Navigate to the server file.
 - Run the setup as **Administrator**.
@@ -377,7 +369,7 @@ Here's the corrected and enhanced version of your notes for GitHub:
 
 - After successful installation, the system will restart.
 
-### Step 9: Start Client Setup
+### [Step 9: Start Client Setup](#step-9-start-client-setup)
 
 - Run the client setup installation as **Administrator**.
 
@@ -415,7 +407,7 @@ Here's the corrected and enhanced version of your notes for GitHub:
 
 ![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fdad2b1c-eced-4f16-bacb-e0c3f96ed604)
 
-## Validation
+## [Validation](#validation)
 
 1. **Log into the PrivateArk Client:** Ensure the following safes are created: Notification Engine, System, VaultInternal.
 
@@ -436,42 +428,173 @@ Here's the corrected and enhanced version of your notes for GitHub:
 
 ![PrivateArk Safe](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c93c22cd-6095-47da-a7d2-9fd1495d967f)
 
-## Installation of DR Vault
+## [Installation of DR Vault](#installation-of-dr-vault)
 
-1. **Update DR User in Primary Vault:**
-   - Log into the primary vault,
+1. **Log into the Primary Vault:**
+   - Open the PrivateArk client, update the DR user, uncheck the **Disable user** for the DR user profile, and update the password to `Tej@143`.
 
- and update the DR user with the name `PVWAAppUser`.
+2. **Stop the PrivateArk Server Service:**
 
-![Update DR User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a70d46a7-c5b4-4670-bba6-e9877607a24d)
+![Stop Service
 
-2. **Initialize Vault Wizard:**
-   - Enter details and complete the process as per the steps outlined in the provided [PDF](https://github.com/NallaTeja/CyberArk-PAS/blob/main/CyberArk%20PAS%20DR%20Vault%20Installation.pdf).
+](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3c6d0995-bc8b-441e-a967-4514248cfcda)
+![Stop Service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e1dc9fd9-3663-4f41-a60d-d13645c260f3)
 
-3. **Install RabbitMQ:**
+3. **Install the PADR Component in Primary Vault:**
 
-![Install RabbitMQ](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3192ff1c-e8cf-41e1-9b4a-c2ee1a12a781)
+![Install PADR](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/828cd88b-b6dc-4af8-a9e0-9fc730374ebc)
 
-4. **Check for DR Vault Success:**
+4. **Setup the CyberArk Vault Disaster Recovery:**
 
-![DR Vault Success](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0503202a-52a3-4030-94b0-6e8e1557b738)
+![Setup DR](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/34d7d513-0de1-4edd-97b2-f66aca521fc0)
 
-5. **Reboot Server:**
-   - Validate that all configurations are applied successfully.
+5. **Accept the License Agreement:**
 
-### Final Steps
+![Accept License](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40fddcd8-6245-4900-af1f-bc6355e195da)
 
-- **Confirm Connections:** Ensure that the primary and DR vaults are in sync.
-- **Monitor Systems:** Regularly check system health and logs for any anomalies.
+6. **Fill the User Information:**
 
----
+![User Information](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
 
-Feel free to modify further or ask for additional information!
+7. **Choose Destination Location:**
 
+![Destination Location](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80381ed6-5dad-468c-b916-85b14a65a196)
 
+- **User:** `DR`
+- **Password:** `Tej@143`
 
+![DR User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/65a58c6d-77c9-47e8-a265-4f236aaab899)
 
+8. **Replicate Vault Details:**
+   - Address: `192.168.5.129`
+   - Port: `1858`
 
+![Replicate Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a6927b47-ed21-4bbe-a39a-06bb75a918b7)
 
+9. **Finish Setup and Verify Logs:**
 
+![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e11f814c-9833-4b77-949c-5ce1aef3f2ca)
 
+10. **Run PADR.exe File and Verify Log File:**
+    - Check the logs and verify the replication is complete.
+    - Path: `C:\Program Files (x86)\PrivateArk\PADR\Logs`
+
+![PADR Logs](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/11de9334-e156-4cbd-9bf0-8fe43cc52081)
+
+11. **Verify PADR Configuration File:**
+    - Ensure `Failovermode = No`
+    - Path: `C:\Program Files (x86)\PrivateArk\PADR\Conf`
+
+![PADR Config](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5d0fa3bb-8e8d-41d1-9b4b-606ee2b28dda)
+
+## [Test DR Replication](#test-dr-replication)
+
+1. **Create a New User:**
+   - Open Primary Vault PrivateArk client.
+   - Login as administrator.
+   - Navigate to Tools > Administrative Tools > Users and Groups on Server Vault.
+   - Select New > User.
+   - Provide username and password.
+
+![Create User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a3787c49-db2d-4fea-b6db-5b0e59172bfe)
+![User Credentials](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8849014f-91f8-40bf-b562-e25d43957d00)
+![Create User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4731d6b0-049e-4f78-b1a2-ddaf6d49b02e)
+
+2. **Create a New Safe via PVWA UI:**
+   - Login with administrator credentials.
+   - Navigate to Policies > Access Control > Add Safe.
+   - Add member in the safe.
+
+![Add Safe](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/74904cc6-14af-471f-a613-74beadc45aa4)
+![Safe Details](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b6b9b2d5-d4cf-4a01-947c-27c8fe16798d)
+![Add Member](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1908ba54-c1bf-4201-85e5-5df12e3659f0)
+![Verify Safe](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b8632172-5231-49b5-86b1-1fd881bfe729)
+
+## [Test Automatic DR Failover](#test-automatic-dr-failover)
+
+1. **Stop Primary Vault PrivateArk Server Service:**
+
+![Stop Service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/24c285a4-0469-4bec-97a8-01028dafddcf)
+
+2. **Log into DR Vault and Run Commands:**
+   - Open PowerShell as administrator.
+   - Navigate to the PADR directory and monitor the logs.
+   - Commands:
+     ```
+     cd "C:\Program Files (x86)\PrivateArk\PADR"
+     Get-Content .\logs\padr.log -wait
+     ```
+
+![Run Commands](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4ebce1fb-6a06-41d0-b3b7-5afeabf9f84d)
+
+3. **Verify DR Failover:**
+   - After 5 attempts of failure, data synchronization completes, and DR failover is successful.
+
+![Failover Success](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/64c522e9-b056-4496-9dd0-7bb672b93cfc)
+![DR Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d3193044-c6f4-4c46-8d0c-22fd51216e7b)
+
+4. **Verify PVWA UI Access:**
+   - Update `vault.ini` file with DR vault IP address.
+   - Path: `C:\CyberArk\Password Vault Web Access\VaultInfo`
+   - Run `iisreset` and check access.
+
+![Update Vault.ini](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f71b7606-b8f1-41a5-a177-b7de877c1dc2)
+![iisreset](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4707e8c8-8e32-4aa7-b2cd-49585ee03d95)
+![PVWA Access](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/01479224-8927-459d-9a50-be90771f93cc)
+
+## [Fall Back from DR Vault to Primary Vault](#fall-back-from-dr-vault-to-primary-vault)
+
+1. **Stop the PrivateArk Server Service:**
+
+![Stop Service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
+![Stop Service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/28c3a774-9558-462e-9322-ae6e6ef854a7)
+
+2. **Install the PADR Component in Primary Vault:**
+
+![Install PADR](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/828cd88b-b6dc-4af8-a9e0-9fc730374ebc)
+
+3. **Setup the CyberArk Vault Disaster Recovery:**
+
+![Setup DR](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/34d7d513-0de1-4edd-97b2-f66aca521fc0)
+
+4. **Accept the License Agreement:**
+
+![Accept License](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40fddcd8-6245-4900-af1f-bc6355e195da)
+
+5. **Fill the User Information:**
+
+![User Information](https://github.com/NallaTeja/C
+
+yberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
+
+6. **Choose Destination Location:**
+
+![Destination Location](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80381ed6-5dad-468c-b916-85b14a65a196)
+
+7. **Replicate User Details:**
+   - **User:** `DR`
+   - **Password:** `Tej@143`
+
+![DR User](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/65a58c6d-77c9-47e8-a265-4f236aaab899)
+
+8. **Replicate Vault Details:**
+
+![Replicate Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4b5432a2-d49b-49b1-a879-116d8f2fbcbf)
+
+9. **Setup Complete and Restart Server:**
+
+![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9b55c1ee-06a8-4208-9c05-3e2fdc3a7ff7)
+
+10. **Log into DR Vault and Change DR User Password:**
+    - Ensure the DR user password matches with the primary vault.
+
+![Change Password](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b2842eca-82a5-4ca2-ab47-6b0e80f47e8d)
+![Password Change](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/db1301ab-9faf-45da-b081-6fda98a04595)
+![Password Match](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/04cbc030-cc09-476a-b12b-b5b539a3370d)
+
+11. **Verify PVWA System Health:**
+    - Ensure all components, including the Primary and DR vault, are functioning properly.
+
+![System Health](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
+
+By following these steps, you can ensure a smooth installation and failover process for CyberArk's Disaster Recovery Vault.
