@@ -360,11 +360,14 @@ Install Microsoft Visual Studio x64 and x86.
 
 ![Replicate Vault](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a6927b47-ed21-4bbe-a39a-06bb75a918b7)
 
-9. **Finish Setup and Verify Logs:**
+9. **Finish Setup**
 
 ![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e11f814c-9833-4b77-949c-5ce1aef3f2ca)
 
 10. **Run PADR.exe File and Verify Log File:**
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/744908ae-e8b7-4e4d-95c7-66ff1aea6311)
+
     - Check the logs and verify the replication is complete.
     - Path: `C:\Program Files (x86)\PrivateArk\PADR\Logs`
 
