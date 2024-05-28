@@ -296,9 +296,7 @@ Install Microsoft Visual Studio x64 and x86.
 
 5. **Fill the User Information:**
 
-![User Information](https://github.com/NallaTeja/C
-
-yberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
+![User Information](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
 
 6. **Choose Destination Location:**
 
