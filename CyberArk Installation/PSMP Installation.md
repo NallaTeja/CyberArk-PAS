@@ -9,7 +9,7 @@ Here's a revised and corrected version of the installation process for CyberArk 
 2. **Connect to PSMP Server and Authenticate:**
    - Connect to the PSMP server using the connection string:
      ```
-     c11088@p1c11088%corp@TargetServer_IPaddress@pam-psmp.corp.xyz.com
+     TN007@p1TN007%corp@TargetServer_IPaddress@pam-psmp.corp.xyz.com
      ```
    - Authenticate using SafeNet MobilePass token.
 
