@@ -1,9 +1,3 @@
-Configure remote control Agent i.e, PVWA server IP ~192.168.5.130~ and password ~Tej@143~.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/06a68fd5-0207-41c0-b5a7-139811d18c52)
-
-Uncheck the "Distribute vaults". we are installing RabbitMQTM. 
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/120c55cd-a77b-4f72-beb9-c5616e29d813)
-
 Vault server machine hardening
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6d1723b4-cf65-4c8d-a2d6-d960a9e5aa53)
 
