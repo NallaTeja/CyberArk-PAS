@@ -1,10 +1,10 @@
 # Index
 - 
-- [Client Setup](#step-9-start-client-setup)
+- 
 - [DR Setup Vault](#installation-of-dr-vault)
 - [Failover Test](#validation)
-- [Pre-Installation Check for PrivateArk Server](#Pre-Installation-Check-for-PrivateArk-Server)
-- Step 9: Start Client Setup
+- [Pre-Installation Check for PrivateArk Server](#Step-1-Pre-Installation-Check-for-PrivateArk-Server)
+- [Client Setup](#step-9-start-client-setup)
 - Pre-Installation Check for DR Vault
 - Test DR Replication
 - Test Automatic DR Failover
