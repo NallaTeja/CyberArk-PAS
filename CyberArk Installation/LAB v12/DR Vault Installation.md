@@ -1,5 +1,5 @@
 # Index
-- [Pre-Installation Check for PrivateArk Server](#Step-1-Pre-Installation-Check-for-PrivateArk-Server)
+- [Pre-Installation Check for Vault Installation](#Step-1-Pre-Installation-Check-for-Vault-Installation)
 - [Client Setup](#step-9-start-client-setup)
 - [Pre-Installation Check for DR Vault](#Pre-Installation-Check-for-DR-Vault)
 - [Test DR Replication](#Test-DR-Replication)
@@ -10,7 +10,7 @@
 
 ## Step-by-Step Instructions
 
-### Step 1: Pre-Installation Check for PrivateArk Server
+### Step 1: Pre-Installation Check for Vault Installation
 Install .NET Framework 4.8 or the latest version.
 Install Microsoft Visual Studio x64 and x86.
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/625f54fd-bd6a-4f64-b2f1-a062eabad22c)
