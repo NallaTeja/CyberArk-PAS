@@ -1,23 +1,4 @@
-Vault server machine hardening
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6d1723b4-cf65-4c8d-a2d6-d960a9e5aa53)
 
-Select the program folder, click Next. The Digital Vault Machine Hardening starts after some time private ark database setup will intall .
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa92be0d-2391-400c-a469-24298085b9c9)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0fd1a15d-7d22-4292-a0f0-a5123d629981)
-
-Set built-in Users Passwords. Master Account Password: 
-```
-P@ssw0rd123
-```
-Administrator Account Password: 
-```
-Secur1tyP@ss
-```
-
-Note:- Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
 
 After successful install the system will restart.
 
@@ -332,7 +313,7 @@ Install Microsoft Visual Studio x64 and x86.
   - Master Account Password: `P@ssw0rd123`
   - Administrator Account Password: `Secur1tyP@ss`
 
-**Note:** Use complex passwords with a mixture of numeric and mixed case characters.
+**Note:** Use complex passwords with a mixture of numeric and mixed case characters. By default, the password must contain at least one numeric character and 5 mixed case characters
 
 ![Set Passwords](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c2735ddb-8de1-4bbf-bbc0-f5975ed764d5)
 
