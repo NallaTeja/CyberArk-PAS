@@ -1,32 +1,3 @@
-# Validation
-1. Log into the privateArk client. Following safe will be created.
-Notification Engine, System, VaultInternal
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8f8d4232-1b22-4b99-8562-d3fa692e2d02)
-
-2. Check the services are running
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8c6d6612-28c5-4d0f-92af-8a4e10b46e51)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5658617-46e1-470b-9636-8a84e39fb708)
-
-
-Before Installing DR Vault. Below are the basic info of the status.
-
-System Health
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/00e073ff-8660-46d9-9260-5ab6e0ba6e2e)
-
-PrivateArk safe
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c93c22cd-6095-47da-a7d2-9fd1495d967f)
-
-
-Installion of DR vault
-
-Log into the Primary vault open privateArk client update the DR user, uncheck the **Disble user** for DR user profile. and update the password.
-```
-Tej@143
-```
-
 Stop the privateArk server service
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3c6d0995-bc8b-441e-a967-4514248cfcda)
 
