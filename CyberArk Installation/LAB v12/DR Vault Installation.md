@@ -324,6 +324,7 @@ Install Microsoft Visual Studio x64 and x86.
 
 ![Hardening Start](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa92be0d-2391-400c-a469-24298085b9c9)
 ![Private Ark Setup](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c0c8e580-071e-419a-bc5a-6f2816379dd0)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0fd1a15d-7d22-4292-a0f0-a5123d629981)
 
 ### Step 7: Set Built-in Users Passwords
 
