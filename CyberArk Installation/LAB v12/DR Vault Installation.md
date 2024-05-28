@@ -1,56 +1,3 @@
-# Fall back from DRvault to Primary Vault. 
-
-Stop the privateark server service
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/90040d0e-d43b-48fe-9ba1-85eab3861a37)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/28c3a774-9558-462e-9322-ae6e6ef854a7)
-
-Install the PADR component in primary vault.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/828cd88b-b6dc-4af8-a9e0-9fc730374ebc)
-
-Setup the Cyberark Vault Disaster Recovery.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/34d7d513-0de1-4edd-97b2-f66aca521fc0)
-
-Accept the License Agreement
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40fddcd8-6245-4900-af1f-bc6355e195da)
-
-Fill the user information.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
-
-Choose Destination Location
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/80381ed6-5dad-468c-b916-85b14a65a196)
-
-Replicate User details
-
-User: **DR**
-Password:
-```
-Tej@143
-```
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/65a58c6d-77c9-47e8-a265-4f236aaab899)
-
-
-Replicate Vault Details, Address and Port.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4b5432a2-d49b-49b1-a879-116d8f2fbcbf)
-
-Setup Complete, restart the server.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9b55c1ee-06a8-4208-9c05-3e2fdc3a7ff7)
-
-Log into the DR vault server and change the DR user password which need to be matched with primary vault.
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b2842eca-82a5-4ca2-ab47-6b0e80f47e8d)
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/db1301ab-9faf-45da-b081-6fda98a04595)
-
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/04cbc030-cc09-476a-b12b-b5b539a3370d)
-
-
-
-
-PVWA system health. we can see the all components Primary & DR vault and other commonents.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7625ff2e-c887-4aa5-b7df-42e50cff114b)
-
-
-
 # Index
 - [Install Prerequisistes](#step-1-:-Install-Prerequisites)
 - [Client Setup](#step-9-start-client-setup)
@@ -372,7 +319,8 @@ yberArk-PAS/assets/145950340/e288520f-6faa-4029-961a-dda3b0f9b44c)
 ![Setup Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9b55c1ee-06a8-4208-9c05-3e2fdc3a7ff7)
 
 10. **Log into DR Vault and Change DR User Password:**
-    - Ensure the DR user password matches with the primary vault.
+    - Ensure the DR user password matches with the primary vault. (Pwd: `Tej@143`)
+    - Check mark "Password Never Expires".
 
 ![Change Password](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b2842eca-82a5-4ca2-ab47-6b0e80f47e8d)
 ![Password Change](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/db1301ab-9faf-45da-b081-6fda98a04595)
