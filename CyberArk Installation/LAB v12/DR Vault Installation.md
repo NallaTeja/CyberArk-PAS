@@ -325,9 +325,8 @@ Install Microsoft Visual Studio x64 and x86.
 
 2. **Stop the PrivateArk Server Service:**
 
-![Stop Service
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3c6d0995-bc8b-441e-a967-4514248cfcda)
 
-](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3c6d0995-bc8b-441e-a967-4514248cfcda)
 ![Stop Service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e1dc9fd9-3663-4f41-a60d-d13645c260f3)
 
 3. **Install the PADR Component in Primary Vault:**
