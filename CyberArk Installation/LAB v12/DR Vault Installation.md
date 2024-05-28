@@ -21,7 +21,7 @@ Install Microsoft Visual Studio x64 and x86.
 ![Enable TCP/IPv4](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ed380242-cb44-45d8-91ed-927174db68bf)
 
 
-### [Step 3: Run Server Setup]
+### Step 3: Run Server Setup
 
 - Navigate to the server file.
 - Run the setup as **Administrator**.
