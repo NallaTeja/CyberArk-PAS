@@ -176,8 +176,13 @@ Test connection before going to next
 Set up application properties
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/70975e86-1578-4522-a399-c66eac06c703)
 
-specify your license key
+I have generated the trial version.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5945c82c-a01d-435d-9ab9-70a34fb31e16)
 
+specify your license key
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3d5f1720-7164-4ffd-8cfd-25e57f82546e)
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c16765c8-0b3d-4c6c-8150-5f1453b1d57c)
 
 
 
