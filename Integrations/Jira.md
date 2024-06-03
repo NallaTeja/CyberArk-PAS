@@ -161,12 +161,14 @@ http://localhost:8080/secure/SetupMode!default.jspa
 Set up the database connection (default: embeded database)select "I'll set it up myself"
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d6e1bff5-010d-4d82-b380-ccbe828a3bb6)
 Database setup
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/daee457f-5bf4-4049-bc0c-99a2d4384b52)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3f3c050c-81d6-4320-a4b0-b558b2cec843)
+
 - Database type: PostgreSQL (compatible with CyberArk and Jira)
-- Hostname: `192.168.5.131` localhost (if the database is on the same server as Jira) or the hostname/IP address of your database server
+- Hostname: `localhost` (if the database is on the same server as Jira) or the hostname/IP address of your database server
 - Port: `5432` (default port for PostgreSQL)
-- Database name: `jira_db`
-- Username: administrator
+- Database: `postgres`
+- Username: `postgres`
 - Password: Tej@143
 
 Test connection before going to next 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40023c51-7ee0-4701-a827-c3f0d433787b)
