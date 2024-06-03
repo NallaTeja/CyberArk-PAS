@@ -172,3 +172,13 @@ Database setup
 
 Test connection before going to next 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/40023c51-7ee0-4701-a827-c3f0d433787b)
+
+Set up application properties
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/70975e86-1578-4522-a399-c66eac06c703)
+
+specify your license key
+
+
+
+
+
