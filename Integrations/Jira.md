@@ -12,36 +12,8 @@ Destination Folder
 Successfully installed JAVA
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/addb698b-c143-4e04-92ac-afdc691c29c3)
 
-# Install Jira
-Install Jira Service Desk 5.16.0
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2a4d3842-acd9-44d0-a831-d98cb28f56ea)
-Upradaing Jira (Express Install)
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d99e33bd-5885-4371-b4aa-064a7867378b)
-Installation Summary
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a96b4d19-e8c8-4f83-bd33-064c300e2a80)
-Successfully installed Jira
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e188542a-4626-49d3-b118-1a261076f593)
-Launch browser
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/043f14e3-af0e-4291-80f0-69d954bc489f)
-
-# Configure Jira
-Access the web interface 
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1773b5fa-0151-401f-81c3-daf1faa2ce7f)
-http://localhost:8080/secure/SetupMode!default.jspa
-Set up the database connection (default: embeded database)select "I'll set it up myself"
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d6e1bff5-010d-4d82-b380-ccbe828a3bb6)
-Database setup
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/daee457f-5bf4-4049-bc0c-99a2d4384b52)
-- Database type: PostgreSQL (compatible with CyberArk and Jira)
-- Hostname: `192.168.5.131` localhost (if the database is on the same server as Jira) or the hostname/IP address of your database server
-- Port: `5432` (default port for PostgreSQL)
-- Database name: `jira_db`
-- Username: administrator
-- Password: Tej@143
-
-Test connection before going to next 
-# install Postgresql (based up on windows OS version download the version)
-Download link
+# Install Postgresql 
+Download link (based up on windows OS version download the version)
 https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 Setup -PostgreSQL
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1e7c608c-d246-4fe4-b050-9bfdf12df58f)
@@ -86,12 +58,115 @@ Select the applications you would like to install.
 5. Web Development
    > PEM-HTTPD v2.4.59-1
 Provides a web server interface for managing PostgreSQL. Useful for web-based database management and monitoring.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a133c064-a8a3-456f-917e-1894f8952301)
+Reviw your selection and dowload directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/dcb21ba6-3b14-4363-99aa-406be9cf1959)
+Please click "Next" for installation of dowloaded
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/383226dc-0fd1-4408-8eb3-73898205d8b1)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9acb0ee6-55e1-4055-8672-8337718ea94f)
+
+# Install Migration Toolkit
+Setup Migration Toolkit
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/05cb8de0-2399-4319-bb18-ac8a23773c11)
+Licencence Agreement
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ee0a22e9-08ff-4691-8214-55bd90f87ea9)
+Installation Directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/59e4d4bf-f79c-4b6d-9fa9-9f14c3dbdefd)
+Ready to Install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/434711c4-0671-4515-929c-d8212d711850)
+Completed the Migration Toolkit setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/beae15f8-b842-4fc6-a023-31ad616c5d7a)
+
+# Install PEM SQL Profiler Plugin
+Setup PEM SQL Profiler Plugin
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8e5a1d54-4199-4745-81a4-5c582785a0a2)
+Licence Agreement
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/99cb0684-36f7-4d78-8200-b91f8dadde99)
+PostgreSQL Installation Directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3689db80-1d27-47b9-80fc-a263a1ca3d27)
+Ready to Install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/761777a7-190a-4a87-a002-df9cac81a009)
+
+# Install pgAgent
+Setup pgAgent
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7d4c47ca-73a5-472c-ab33-24bc31475d03)
+Ugrade Mode
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7039ea3a-7df3-403f-ba20-4a88730b1e50)
+
+Added user in ADDC server `192.168.5.128`
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/888455b9-d172-4df9-be74-0ba379f7b72d)
+
+PostgreSQL Installation Details
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1f612b8a-d4ce-4564-8a79-f6fc701a4897)
+
+pgAgent service account  
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/38049a0a-74a4-41fc-b4a2-5d48bc005403)
+Ready to Install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/eb25d716-f5ec-42e3-b9db-9c88122e5f70)
+Completed the pgAgent setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/091eaee0-4182-43a2-a9a2-753c06576cc2)
+
+# Install pgJDBC
+setup pgJDBC
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3d682128-1608-4cf5-be01-46e63c51fa48)
+Installation Directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/05a6c4f2-4a12-4263-bc46-30597681db20)
+Ready to Install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6d3a3b9f-03fa-4f40-89a7-6d5c731bae74)
+Completed the pgJDBC setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9efb5fe2-cf8a-405f-9c72-c5414ef98cd1)
+
+# Install psqlODBC
+setup psqlODBC
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1de69c48-a2f0-4d44-9be3-cf5481d1c6d5)
+Installation Directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9f97c30a-83ef-4ced-8122-0e6e68b0340a)
+Ready to Install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/28f686e3-e506-46fc-8e15-a4f920a4d527)
+Completed the psqlODBC setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/209a0a17-2db9-4037-8c2b-a36bebe610f1)
+
+# Install PEM-HTTPD
+setup PEM-HTTPD
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8d4034f8-74de-4cd1-ae27-4add706a0333)
+Installation Directory
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5acf2a23-ed1d-41e7-9e3c-c9852640676a)
+Apache server Details (port: 8081)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/14a69809-63ba-4830-a1bb-0c9f7d8db583)
+Ready to install
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/442f912c-bac6-47b6-8f9d-147bd8c9190e)
+Completed the PEM-HTTPD setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/48ed7482-f3c5-4cfd-9fb7-cf0f75d325e6)
+
+Stack Builder 4.2.1 installation completed. restart the server.
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b240e6fb-4cfd-4e93-8a9d-083020ce6803)
 
 
+# Install Jira
+Install Jira Service Desk 5.16.0
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2a4d3842-acd9-44d0-a831-d98cb28f56ea)
+Upradaing Jira (Express Install)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d99e33bd-5885-4371-b4aa-064a7867378b)
+Installation Summary
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a96b4d19-e8c8-4f83-bd33-064c300e2a80)
+Successfully installed Jira
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e188542a-4626-49d3-b118-1a261076f593)
+Launch browser
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/043f14e3-af0e-4291-80f0-69d954bc489f)
 
+# Configure Jira
+Access the web interface 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1773b5fa-0151-401f-81c3-daf1faa2ce7f)
+http://localhost:8080/secure/SetupMode!default.jspa
+Set up the database connection (default: embeded database)select "I'll set it up myself"
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d6e1bff5-010d-4d82-b380-ccbe828a3bb6)
+Database setup
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/daee457f-5bf4-4049-bc0c-99a2d4384b52)
+- Database type: PostgreSQL (compatible with CyberArk and Jira)
+- Hostname: `192.168.5.131` localhost (if the database is on the same server as Jira) or the hostname/IP address of your database server
+- Port: `5432` (default port for PostgreSQL)
+- Database name: `jira_db`
+- Username: administrator
+- Password: Tej@143
 
-
-
-
-
-
+Test connection before going to next 
