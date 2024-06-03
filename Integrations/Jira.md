@@ -67,6 +67,25 @@ Successfully installed postgreSQL
 # Stack Bulder 4.2.1
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d2425383-b2c2-4025-9fea-1ed7a9ce5131)
 
+Select the applications you would like to install.
+1. Add-ons, tools and utilities
+   > pgAgent (64 bit) for postgreSQL 12 v4.2.2.-1
+    Useful for scheduling and automating database tasks. This can be beneficial for maintenance and running scheduled queries or jobs related to your integration
+2. Database Drivers
+   > pgJDBC v42.7.2-1
+   Required for Java applications to connect to PostgreSQL, which is essential if Jira is using JDBC for database connectivity.
+   > psqlODBC (64 bit) v13.02.0000-1
+   Useful for applications that connect to PostgreSQL using ODBC, providing flexibility in connection methods.
+3. Database Server
+   > PostgreSQL (Installed)
+4. Registration-required and trial products
+   > Migration toolkit v55.7.0-1
+    Useful if you need to migrate data from another database system
+   > PEM SQL Profiler Plugin for PostgresSQL 12 (64bit) v8.2.0-1
+   Helpful for performance monitoring and optimization.
+5. Web Development
+   > PEM-HTTPD v2.4.59-1
+Provides a web server interface for managing PostgreSQL. Useful for web-based database management and monitoring.
 
 
 
