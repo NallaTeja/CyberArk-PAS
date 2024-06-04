@@ -177,7 +177,7 @@ Set up application properties
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/70975e86-1578-4522-a399-c66eac06c703)
 
 I have generated the trial version.
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/5945c82c-a01d-435d-9ab9-70a34fb31e16)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8bd5820e-48a1-4728-94ef-152d5137af94)
 
 specify your license key
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3d5f1720-7164-4ffd-8cfd-25e57f82546e)
@@ -199,4 +199,5 @@ Jira UI interface
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/55b23cd9-302f-49bc-888d-1bed64abb437)
 
-
+http://localhost:8080/secure/Dashboard.jspa
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f0361314-a2a0-4d86-95c3-7def41b1c784)
