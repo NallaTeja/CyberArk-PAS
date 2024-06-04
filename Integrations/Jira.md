@@ -197,5 +197,6 @@ Welcome to Jira, Teja Nalla
 Jira UI interface
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ba84db69-76e1-4f03-a07f-e8551d1fa469)
 
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/55b23cd9-302f-49bc-888d-1bed64abb437)
 
 
