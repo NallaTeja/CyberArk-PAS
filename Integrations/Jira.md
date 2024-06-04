@@ -184,6 +184,18 @@ specify your license key
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c16765c8-0b3d-4c6c-8150-5f1453b1d57c)
 
+set up administrator account
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c6ea3870-89d1-4f90-9270-92590271ead3)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/e808b42b-08e2-4a32-a717-e173d7a3e736)
+
+Set up email notifications
+I have selected later. the jira setup got installed
+Welcome to Jira, Teja Nalla
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/cfb1174e-7e41-4413-b1d2-735dce3a827d)
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f64a8425-0d53-43ba-88c9-7804502ba4ce)
+
+Jira UI interface
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ba84db69-76e1-4f03-a07f-e8551d1fa469)
 
 
 
