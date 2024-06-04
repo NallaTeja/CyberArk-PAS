@@ -93,9 +93,6 @@ Setup pgAgent
 Ugrade Mode
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7039ea3a-7df3-403f-ba20-4a88730b1e50)
 
-Added user in ADDC server `192.168.5.128`
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/888455b9-d172-4df9-be74-0ba379f7b72d)
-
 PostgreSQL Installation Details
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1f612b8a-d4ce-4564-8a79-f6fc701a4897)
 
@@ -182,6 +179,7 @@ I have generated the trial version.
 specify your license key
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3d5f1720-7164-4ffd-8cfd-25e57f82546e)
 
+validate the ports via powershell 5432 & 8080
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c16765c8-0b3d-4c6c-8150-5f1453b1d57c)
 
 set up administrator account
