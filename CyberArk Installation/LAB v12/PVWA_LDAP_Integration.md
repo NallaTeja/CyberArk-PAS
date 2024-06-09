@@ -139,5 +139,3 @@ Sure, I'll assist you with correcting the alignment and enhancing the language. 
    ![LDAP Validation](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4453968c-f2dc-4842-90f7-0314880588c1)
    
    ![LDAP Validation Process](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/dfdc4c27-6e1e-4b17-ac4a-fed173135c72)
-
-Make sure to adjust the formatting as necessary, and feel free to add any additional adverbs or strong language to enhance clarity and emphasis.
