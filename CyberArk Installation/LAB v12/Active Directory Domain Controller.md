@@ -132,6 +132,10 @@ Check the internet Access
 
 ![internet](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7f4b5e8f-0343-4943-b6a9-ef1b07ef7aa7)
 
+check the DNS servers `127.0.0.1`
+
+![DNS servers](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8599a4ea-4b04-4cfc-a70d-c7d1c4eec023)
+
 
 
 
