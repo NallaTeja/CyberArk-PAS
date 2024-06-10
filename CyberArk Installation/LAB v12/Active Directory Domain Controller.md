@@ -37,11 +37,15 @@ Set NetBIOS domain name: `CORPDEVLAB`
 
 Paths, Click 'Next'.
 
-![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b8dfac2a-3c53-4a81-9be8-4d715bd09868)
+![Paths](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b8dfac2a-3c53-4a81-9be8-4d715bd09868)
 
+Review Options, Click 'Next'.
 
+![Review Options](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7c37fbd2-f765-45f5-a702-53f45f209450)
 
+Prerequisites check, There are some warning messages showing, but we can safely ignore them for lab environment. Click 'Install'.
 
-
+![Prerequisites check](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6b995a99-a8cd-42df-8af0-9feb9d8d48bb)
+![Signed out](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4670b1af-9823-463b-85db-45e9ab855c3e)
 
 
