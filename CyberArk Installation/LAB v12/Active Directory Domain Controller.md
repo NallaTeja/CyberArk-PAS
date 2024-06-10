@@ -4,6 +4,8 @@ Network Protocol IPv4 configuration
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/06f2f551-2c19-49cf-90c1-b0bad4458c94)
 
+# Phase 1: Install Domain controller services
+
 Open Server Manager, Manage> Add Roles and features
 
 ![Add Roles and features](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/460078e0-b667-455e-8220-b960c8aa2352)
@@ -47,5 +49,8 @@ Prerequisites check, There are some warning messages showing, but we can safely 
 
 ![Prerequisites check](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6b995a99-a8cd-42df-8af0-9feb9d8d48bb)
 ![Signed out](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4670b1af-9823-463b-85db-45e9ab855c3e)
+![CORPDEVLAB](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d111b848-3cfe-41a0-b972-9c0ddefa84e2)
+
+# Phase 2: Install Certification Service 
 
 
