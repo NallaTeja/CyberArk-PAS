@@ -137,69 +137,6 @@ check the DNS servers `127.0.0.1`
 ![DNS servers](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8599a4ea-4b04-4cfc-a70d-c7d1c4eec023)
 
 
-# EMail setup Installation
-
-Download software 'Mailenable' from below link. Select Standard Edition (Free)
-
-```
-https://www.mailenable.com/download.asp
-```
-
-![Mailenable download](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c633328c-0d56-4562-a857-43535e34c3d4)
-
-Run the setup as administrator. Click ok to Intallation Note.
-
-![Intallation Note](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7fe92f51-9592-4c57-a047-1a501a1a20be)
-
-![Welcome](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d5520e4d-8251-46cf-91a8-185d35f32bbd)
-
-Installation settings: Fill the Name & company domain details.
-![Installation settings](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/c1d294d9-d7ea-448f-a6f7-1a30553e284f)
-
-Accept the terms and conditions
-![terms](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9d041640-3292-4a8c-a129-7c0e832d241a)
-
-Select Components - Web Mail Service, WebAdmin Service, Migration Centre.
-![Select Components](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f941c9dc-d48f-412f-ad01-08b6ee8a9ed4)
-
-Program files destination location.
-![Program files](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/3a0e3b56-b4d2-4ec7-8f68-0a4fa188ab27)
-
-Program Manager Group
-![mailenable grp name](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f5d4c0e7-6426-492a-8531-9efd10b30171)
-
-MailEnable Repository
-![Repository](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4d1f7813-a16b-4405-a9bb-e6070eb6eba4)
-
-Get Postoffice Details:-
-Posti Office Name: `corp.devlab.com`
-Password: `Tej@143`
-
-![Postoffice Details](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/758184c6-a46a-48e8-b27d-1498bd877222)
-
-MailEnable Messaging Services 
-
-![Messaging Services](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2c7aae4c-0293-4685-932d-7767e19a9fe2)
-
-SMTP Connector Configuration (SMTP port: 25).
-
-![SMTP Connector Configuration](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/7a46c9a5-3847-44bb-b173-8a9da454eecc)
-
-Start Installation
-![Start Installation](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b0dfbafb-ddaf-42a3-8fb1-abc3354b3f2c)
-
-Select WebMail Web Root.
-
-![Web Root](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f89db89b-5921-4e40-95e0-57aae83efa6e)
-
-Select Web Administrator Web Root
-
-![Web Administrator](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/2a4155bd-0e91-4c5b-af2a-f74f52d22d99)
-
-Installation Complete
-
-![Installation Complete](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/86b04c77-6070-4d5e-a26b-a912e349a251)
-![MailEnable Welcome page](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9be558a4-c884-4a99-8b18-98f4d8f0e96f)
 
 
 
