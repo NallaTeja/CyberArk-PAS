@@ -72,25 +72,6 @@ Enter password
 ```
 Tej@143
 ```
-
-```
-[root@localhost yum.repos.d]# hostnamectl
-   Static hostname: (unset)                                 
-Transient hostname: localhost
-         Icon name: computer-vm
-           Chassis: vm 🖴
-        Machine ID: b4cec7e0a4f04208ad361006a8baa5b2
-           Boot ID: 336cc5b09c1b47e3af6953dc326881b6
-    Virtualization: vmware
-  Operating System: Red Hat Enterprise Linux 9.4 (Plow)     
-       CPE OS Name: cpe:/o:redhat:enterprise_linux:9::baseos
-            Kernel: Linux 5.14.0-427.20.1.el9_4.x86_64
-      Architecture: x86-64
-   Hardware Vendor: VMware, Inc.
-    Hardware Model: VMware20,1
-  Firmware Version: VMW201.00V.21805430.B64.2305221830
-```
-
 Enable the epel 
 
 ```
@@ -291,4 +272,7 @@ sudo systemctl restart radiusd
 Failed to restart the radiusd service
 ![Failed radiusd service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa8c68dc-20b0-43e9-a957-c890ca2d95f4)
 
-
+Run the configuration check manually: Below command runs FreeRADIUS in debug mode, providing detailed output
+```
+sudo radiusd -X
+```
