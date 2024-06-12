@@ -1,3 +1,8 @@
+Reference link: 
+```
+https://docs.secureauth.com/2104/en/pam-radius-installation-and-configuration-guide.html
+```
+
 # Setting Static IP of RHEL9 OS Server 
 ![changing Dynamic IP to Static IP](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8877814b-905b-4687-b39d-f7f8bb36cef6)
 
