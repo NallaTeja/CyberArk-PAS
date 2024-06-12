@@ -64,10 +64,16 @@ hostnamectl
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1015abff-5a35-48b0-8229-d7c8c4ca6333)
 
 # Setting up Radius server and integrating to cyberark
+Login as root user
+```
 su root
+```
+Enter password
+```
 Tej@143
+```
 
----
+```
 [root@localhost yum.repos.d]# hostnamectl
    Static hostname: (unset)                                 
 Transient hostname: localhost
@@ -83,15 +89,21 @@ Transient hostname: localhost
    Hardware Vendor: VMware, Inc.
     Hardware Model: VMware20,1
   Firmware Version: VMW201.00V.21805430.B64.2305221830
----
+```
+
+Enable the epel 
 
 ```
 sudo yum install epel-release
 ```
-if you get "No match for argument" excecute below cmd
+![Enable epel](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/ce7535bb-c5f8-4958-8943-8c5330658115)
+
+if you get "No match for argument" execute below cmd
 ```
 sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
+![rpm](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6ac19e47-b02f-478e-a04b-2843cb72e10b)
+
 clean up the caches
 ```
 sudo yum clean all
@@ -101,16 +113,12 @@ Go to yum.repos.d
 cd /etc/yum.repos.d/
 ```
 open the list you can see below output.
+
 ```
 ls -la
 ```
 
-**total 164
-drwxr-xr-x.   2 root root     67 Jun 12 11:47 .
-drwxr-xr-x. 159 root root   8192 Jun 12 11:47 ..
--rw-r--r--.   1 root root   1358 Sep  4  2021 epel.repo
--rw-r--r--.   1 root root   1457 Sep  4  2021 epel-testing.repo
--rw-r--r--.   1 root root 143765 Jun 12 11:30 redhat.repo**
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/df6dddb5-79fe-4c73-8514-1c6a8445e05b)
 
 
 sudo yum check
