@@ -239,6 +239,11 @@ not able to login checked Privateark server getting below error. (from radius se
 
 # Trobleshooting radius server steps: 
 
+Check the status of the radiusd service:
+```
+sudo systemctl status radiusd.service
+```
+
 excecuted the below cmd, no entries found.
 ```
 sudo journalctl -u radiusd
@@ -262,7 +267,7 @@ cmd
 ```
 vi /etc/raddb/radiusd.conf
 ```
-Edited file asper above example.
+Edited file as per above example.
 ![Edited radiusd.conf](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/26b9d00b-2008-427f-a065-4a728b2b2961)
 
 Restart the radiusd
@@ -275,4 +280,13 @@ Failed to restart the radiusd service
 Run the configuration check manually: Below command runs FreeRADIUS in debug mode, providing detailed output
 ```
 sudo radiusd -X
+```
+
+
+![updated the client.conf](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9210ade9-cbd0-4ea4-ad77-74e2ec309b8d)
+
+check the log to see if there's any specific error message that can provide more insight into the issue
+
+```
+sudo journalctl -xeu radiusd.service
 ```
