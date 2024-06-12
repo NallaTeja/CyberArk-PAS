@@ -208,6 +208,7 @@ vi /etc/pam_radius.conf
 192.168.122.36  testing123       3
 ```
 useradd bob
+
 Stop privateark service in primary vault server then update radius secret file via CAVault Manager by excecuting below cmd
 ```
 CAVaultManager SecureSecretFiles /secretType Radius /Secret Tej@143 /SecuredFileName radiussecret.dat
@@ -218,15 +219,68 @@ In dbparm.ini file radius server info is updated.
 
 ```
 [Radius]
-RadiusServerInfo=192.168.5.140;1812;vault1;radiussecret.dat
+RadiusServersInfo=192.168.5.140;1812;vault1;radiussecret.dat
 ```
-![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1fdd60d4-e911-472e-a1cd-05b0dff7449a)
+![RadiusServersInfo](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/d2315761-2ee0-4729-ad11-82c2e0e77d0d)
+
+
 
 Now start the privateark service and Cyberark ENE service. Loin into the 'privateark client' need create user in vault to map the radius account `bob`.
 
 ![vault Newuser bob](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/569f5c02-3695-477d-a9d7-2fea55171977)
 
-Change authentication method 'RADIUS Authentication' for 'bob' user.
+Change authentication method 'RADIUS Authentication' for 'bob' user. click ok Account will be created.
 ![Radius Authentication](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/94315fda-056b-42b7-bb5b-a0da3e53c7de)
+
+login PVWA UI with administrator cred and enable Radius Authentication. Go to 'Administration' select 'option'
+
+![Administration](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/f3647a44-f8c7-4440-9a14-6ae01cc1cb90)
+
+Go to Authentiation Methods>Radius. Give the vaule 'Enabled=Yes' click apply and ok.
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/64a4a616-3707-4b58-b057-0344aeacfa56)
+
+After signing out from pvwa UI you can see radius authentication. 
+![pvwa radius authentication](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/41141fb6-0ba6-44e8-ac4f-4442a5eb4cac)
+
+click 'radius' and give bob user creds and login
+not able to login checked Privateark server getting below error. (from radius server authentication is not happening)
+
+"ITATS539E RADIUS authentication failure for user. (Diagnostic information: 14, 0)".
+
+# Trobleshooting radius server steps: 
+
+excecuted the below cmd, no entries found.
+```
+sudo journalctl -u radiusd
+```
+![no entries](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/a57dadda-ed86-44d3-8520-a7e05d3a0a46)
+
+
+Check radiusd.conf file. Example check the configuration are enabled like below
+```
+log {
+    destination = files
+    file = /var/log/radius/radius.log
+    syslog_facility = daemon
+    stripped_names = no
+    auth = yes
+    auth_badpass = yes
+    auth_goodpass = yes
+}
+```
+cmd
+```
+vi /etc/raddb/radiusd.conf
+```
+Edited file asper above example.
+![Edited radiusd.conf](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/26b9d00b-2008-427f-a065-4a728b2b2961)
+
+Restart the radiusd
+```
+sudo systemctl restart radiusd
+```
+Failed to restart the radiusd service
+![Failed radiusd service](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/fa8c68dc-20b0-43e9-a957-c890ca2d95f4)
 
 
