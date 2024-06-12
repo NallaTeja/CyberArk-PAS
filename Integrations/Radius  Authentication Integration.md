@@ -184,10 +184,12 @@ vi /etc/raddb/clients.conf
 ```
 
 ```
-client vault {
-       ipaddr          = 192.168.5.129
-       secret          = Tej@143
+client vault1 {
+    ipaddr = 192.168.5.129
+    secret = Tej@143
+    require_message_authenticator = no
 }
+
 ```
 
 yum install -y freeradius-utils
@@ -282,8 +284,6 @@ Run the configuration check manually: Below command runs FreeRADIUS in debug mod
 sudo radiusd -X
 ```
 
-
-![updated the client.conf](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/9210ade9-cbd0-4ea4-ad77-74e2ec309b8d)
 
 check the log to see if there's any specific error message that can provide more insight into the issue
 
