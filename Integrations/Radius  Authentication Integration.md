@@ -66,7 +66,8 @@ hostnamectl
 # Setting up Radius server and integrating to cyberark
 su root
 Tej@143
-```
+
+---
 [root@localhost yum.repos.d]# hostnamectl
    Static hostname: (unset)                                 
 Transient hostname: localhost
@@ -82,29 +83,43 @@ Transient hostname: localhost
    Hardware Vendor: VMware, Inc.
     Hardware Model: VMware20,1
   Firmware Version: VMW201.00V.21805430.B64.2305221830
+---
+
+```
+sudo yum install epel-release
+```
+if you get "No match for argument" excecute below cmd
+```
+sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+```
+clean up the caches
+```
+sudo yum clean all
+```
+Go to yum.repos.d 
+```
+cd /etc/yum.repos.d/
+```
+open the list you can see below output.
+```
+ls -la
 ```
 
-sudo yum install epel-release
-(if you get "No match for argument" excecute below cmd)
-sudo rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-sudo yum clean all
-cd /etc/yum.repos.d/
-ls -la
----
-total 164
+**total 164
 drwxr-xr-x.   2 root root     67 Jun 12 11:47 .
 drwxr-xr-x. 159 root root   8192 Jun 12 11:47 ..
 -rw-r--r--.   1 root root   1358 Sep  4  2021 epel.repo
 -rw-r--r--.   1 root root   1457 Sep  4  2021 epel-testing.repo
--rw-r--r--.   1 root root 143765 Jun 12 11:30 redhat.repo
----
+-rw-r--r--.   1 root root 143765 Jun 12 11:30 redhat.repo**
+
+
 sudo yum check
 sudo yum update
-
-yum install pam_radius
-
 ```
-[root@localhost yum.repos.d]# yum install pam_radius
+yum install pam_radius
+```
+
+**[root@localhost yum.repos.d]# yum install pam_radius
 Updating Subscription Management repositories.
 Last metadata expiration check: 0:01:14 ago on Wed 12 Jun 2024 11:53:34 AM IST.
 Dependencies resolved.
@@ -144,10 +159,11 @@ Running transaction
 Installed products updated.
 
 Installed:
-  pam_radius-1.4.0-4.el7.x86_64 
+  pam_radius-1.4.0-4.el7.x86_64 **
+
 ```
 vi /etc/pam_radius.conf
-
+```
 ---
 # server[:port] shared_secret      timeout (s)
 127.0.0.1       secret             1
