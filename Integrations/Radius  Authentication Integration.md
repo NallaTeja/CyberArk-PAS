@@ -71,7 +71,8 @@ CAVaultManager SecureSecretFiles /secretType Radius /Secret Tej@143 /SecuredFile
 ```
 ![PVault CAVault Manager secret](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1b69763b-885a-426e-9234-7a58cfff8477)
 
-dbparm radius server info updated
+In dbparm.ini file radius server info is updated.
+
 ```
 [Radius]
 RadiusServerInfo=192.168.5.140;vault1;radiussecret.dat
@@ -79,4 +80,5 @@ RadiusServerInfo=192.168.5.140;vault1;radiussecret.dat
 
 ![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1cb4c077-9161-4bbd-ae76-b6953dff55b6)
 
+Now start the privateark service and Cyberark ENE service
 
