@@ -218,13 +218,15 @@ In dbparm.ini file radius server info is updated.
 
 ```
 [Radius]
-RadiusServerInfo=192.168.5.140;vault1;radiussecret.dat
+RadiusServerInfo=192.168.5.140;1812;vault1;radiussecret.dat
 ```
-
-![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1cb4c077-9161-4bbd-ae76-b6953dff55b6)
+![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1fdd60d4-e911-472e-a1cd-05b0dff7449a)
 
 Now start the privateark service and Cyberark ENE service. Loin into the 'privateark client' need create user in vault to map the radius account `bob`.
 
 ![vault Newuser bob](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/569f5c02-3695-477d-a9d7-2fea55171977)
+
+Change authentication method 'RADIUS Authentication' for 'bob' user.
+![Radius Authentication](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/94315fda-056b-42b7-bb5b-a0da3e53c7de)
 
 
