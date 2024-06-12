@@ -118,8 +118,8 @@ sudo yum update
 ```
 yum install pam_radius
 ```
-
-**[root@localhost yum.repos.d]# yum install pam_radius
+```
+[root@localhost yum.repos.d]# yum install pam_radius
 Updating Subscription Management repositories.
 Last metadata expiration check: 0:01:14 ago on Wed 12 Jun 2024 11:53:34 AM IST.
 Dependencies resolved.
@@ -159,32 +159,47 @@ Running transaction
 Installed products updated.
 
 Installed:
-  pam_radius-1.4.0-4.el7.x86_64 **
+  pam_radius-1.4.0-4.el7.x86_64
+```
+
+Edit the `pam_radius.conf` file
 
 ```
 vi /etc/pam_radius.conf
 ```
----
+
+```
 # server[:port] shared_secret      timeout (s)
 127.0.0.1       secret             1
 other-server    other-secret       3
----
+```
 
+Update the sshd file
+
+```
 vi /etc/pam.d/sshd
+```
 ```
 #%PAM-1.0
 auth       sufficient      pam_radius_auth.so
 ```
-[root@localhost yum.repos.d]# mkdir /etc/raddb
+create a directory `raddb`
+```
+mkdir /etc/raddb
+```
 
+Edit the `Clients.conf` file
+
+```
 vi /etc/raddb/clients.conf
+```
 
----
+```
 client vault {
        ipaddr          = 192.168.5.129
        secret          = Tej@143
 }
----
+```
 
 yum install -y freeradius-utils
 
