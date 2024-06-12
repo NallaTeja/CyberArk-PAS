@@ -1,16 +1,4 @@
-
-![PVault CAVault Manager secret](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1b69763b-885a-426e-9234-7a58cfff8477)
-
-dbparm radius server info updated
-```
-[Radius]
-RadiusServerInfo=192.168.5.140;vault1;radiussecret.dat
-```
-
-![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1cb4c077-9161-4bbd-ae76-b6953dff55b6)
-
-
-# Setting Static IP to RHEL9 OS Server 
+# Setting Static IP of RHEL9 OS Server 
 ![changing Dynamic IP to Static IP](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/8877814b-905b-4687-b39d-f7f8bb36cef6)
 
 ```
@@ -30,7 +18,7 @@ sudo systemctl restart NetworkManager
 ```
 ![Excecuted above cmd](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/b6b6b430-ad90-4562-9566-0fb6f69e97b2)
 
-# Setting hostname to RHEL9 OS Server 
+# Setting hostname of RHEL9 OS Server 
 Use the hostnamectl command to set the correct hostname:
 
 ```
@@ -75,6 +63,16 @@ hostnamectl
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1015abff-5a35-48b0-8229-d7c8c4ca6333)
 
+# Setting up Radius server and integrating to cyberark
 
+![PVault CAVault Manager secret](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1b69763b-885a-426e-9234-7a58cfff8477)
+
+dbparm radius server info updated
+```
+[Radius]
+RadiusServerInfo=192.168.5.140;vault1;radiussecret.dat
+```
+
+![dbparm radius server info](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/1cb4c077-9161-4bbd-ae76-b6953dff55b6)
 
 
