@@ -1,4 +1,6 @@
 # Index
+[Classification of IP Addresses](#Classification-of-IP-Addresses)
+
 [Cybersecurity Frameworks](#Cybersecurity-Frameworks)
 
 [Common Cyber Attacks)](#Common-Cyber-Attacks)
@@ -12,6 +14,59 @@
 ---
 ## Security Operations Center (SOC)
 ---
+## Classification of IP Addresses
+
+### IPv4 Address Classes
+
+1. **Class A**
+   - Range: 0.0.0.0 to 127.255.255.255
+   - Subnet Mask: 255.0.0.0
+   - Default Subnet Mask: 255.0.0.0
+
+2. **Class B**
+   - Range: 128.0.0.0 to 191.255.255.255
+   - Subnet Mask: 255.255.0.0
+   - Default Subnet Mask: 255.255.0.0
+
+3. **Class C**
+   - Range: 192.0.0.0 to 223.255.255.255
+   - Subnet Mask: 255.255.255.0
+   - Default Subnet Mask: 255.255.255.0
+
+4. **Class D**
+   - Range: 224.0.0.0 to 239.255.255.255
+   - Used for multicast groups
+
+5. **Class E**
+   - Range: 240.0.0.0 to 255.255.255.255
+   - Reserved for experimental use
+
+### Private IP Addresses
+
+- **Class A**: 10.0.0.0 to 10.255.255.255
+- **Class B**: 172.16.0.0 to 172.31.255.255
+- **Class C**: 192.168.0.0 to 192.168.255.255
+
+### Public IP Addresses
+
+- Assigned by the Internet Assigned Numbers Authority (IANA) and used for devices that are accessible over the Internet.
+
+### Static IP Addresses
+
+- Manually assigned to a device and do not change over time.
+
+### Dynamic IP Addresses
+
+- Assigned by a DHCP server and can change over time.
+
+### IPv6 Addresses
+
+- **Structure**: 128-bit address written in hexadecimal and separated by colons.
+- **Example**: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+- **Types**: Unicast, Anycast, Multicast
+- **Global Unicast Address**: Globally unique and routable on the IPv6 Internet.
+- **Link-Local Address**: Used for communication within a single network segment.
+- **Unique Local Address**: Used for local communication within a site or between a limited number of sites.
 
 ### Cybersecurity Frameworks
 
