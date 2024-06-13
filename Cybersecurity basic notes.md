@@ -12,7 +12,9 @@
 [Cyber Kill Chain](#cyber-kill-chain)
 
 ---
+
 ## Security Operations Center (SOC)
+
 ---
 ## Classification of IP Addresses
 
@@ -67,6 +69,7 @@
 - **Global Unicast Address**: Globally unique and routable on the IPv6 Internet.
 - **Link-Local Address**: Used for communication within a single network segment.
 - **Unique Local Address**: Used for local communication within a site or between a limited number of sites.
+---
 
 ### Cybersecurity Frameworks
 
