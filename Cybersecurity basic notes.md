@@ -1,6 +1,7 @@
 ## Security Operations Center (SOC)
+---
 
-### Cybersecurity Frameworks (2024)
+### Cybersecurity Frameworks
 
 1. **NIST Cybersecurity Framework**: 
    - Guidelines for identifying, protecting, detecting, responding to, and recovering from cyberattacks.
@@ -34,8 +35,9 @@
 
 11. **NY DFS**: 
     - New York's financial security regulation.
+---
 
-### Common Cyber Attacks (2024)
+### Common Cyber Attacks
 
 1. **DDoS Attacks**: 
    - Overwhelm a system with traffic to disrupt service.
@@ -78,6 +80,7 @@
 
 14. **URL Manipulation**: 
     - Alters URLs to redirect users to malicious sites or steal information.
+---
 
 ### OWASP
 
@@ -106,6 +109,7 @@
 
 7. **Application Layer (Layer 7)**: 
    - Network services for applications (e.g., HTTP, SMTP, FTP).
+---
 
 ### Cyber Kill Chain
 
@@ -129,6 +133,7 @@
 
 7. **Actions on Objectives**: 
    - Achieving the attacker's goals (e.g., data theft).
+---
 
 8. **Exfiltration**: 
    - Stealing and sending data to the attacker.
