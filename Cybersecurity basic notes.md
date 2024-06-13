@@ -1,8 +1,12 @@
 # Index
-[### Cybersecurity Frameworks](#-Cybersecurity-Frameworks)
-[### Common Cyber Attacks)](#-Common-Cyber-Attacks)
+[Cybersecurity Frameworks](#Cybersecurity-Frameworks)
+
+[Common Cyber Attacks)](#Common-Cyber-Attacks)
+
 [OWASP](#owasp)
+
 [OSI Model Layers](#osi-model-layers)
+
 [Cyber Kill Chain](#cyber-kill-chain)
 
 ---
