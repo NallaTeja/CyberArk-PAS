@@ -12,10 +12,9 @@
 [Cyber Kill Chain](#cyber-kill-chain)
 
 ---
-
 ## Security Operations Center (SOC)
-
 ---
+
 ## Classification of IP Addresses
 
 ### IPv4 Address Classes
