@@ -129,59 +129,42 @@
 
 ### OWASP
 
-- **OWASP ASVS**: 
-  - A set of security requirements for designing, developing, and testing modern web applications and services.
+- **OWASP ASVS**: A set of security requirements for designing, developing, and testing modern web applications and services.
 
 ### OSI Model Layers
 
-1. **Physical Layer (Layer 1)**: 
-   - Physical connection and transmission of raw bit streams (e.g., hubs, repeaters, modems, cables).
+1. **Physical Layer (Layer 1)**: Physical connection and transmission of raw bit streams (e.g., hubs, repeaters, modems, cables).
 
-2. **Data Link Layer (Layer 2)**: 
-   - Node-to-node data transfer and error correction (e.g., switches, bridges).
+2. **Data Link Layer (Layer 2)**: Node-to-node data transfer and error correction (e.g., switches, bridges).
 
-3. **Network Layer (Layer 3)**: 
-   - Device addressing and packet forwarding (e.g., IP, routers).
+3. **Network Layer (Layer 3)**: Device addressing and packet forwarding (e.g., IP, routers).
 
-4. **Transport Layer (Layer 4)**: 
-   - End-to-end data transfer and error recovery (e.g., TCP, UDP).
+4. **Transport Layer (Layer 4)**:  End-to-end data transfer and error recovery (e.g., TCP, UDP).
 
-5. **Session Layer (Layer 5)**: 
-   - Connection management between applications.
+5. **Session Layer (Layer 5)**: Connection management between applications.
 
-6. **Presentation Layer (Layer 6)**: 
-   - Data translation and encryption.
+6. **Presentation Layer (Layer 6)**: Data translation and encryption.
 
-7. **Application Layer (Layer 7)**: 
-   - Network services for applications (e.g., HTTP, SMTP, FTP).
+7. **Application Layer (Layer 7)**: Network services for applications (e.g., HTTP, SMTP, FTP).
 ---
 
 ### Cyber Kill Chain
 
-1. **Reconnaissance**: 
-   - Gathering information about the target.
+1. **Reconnaissance**:  Gathering information about the target.
 
-2. **Weaponization**: 
-   - Creating tailored malware.
+2. **Weaponization**: Creating tailored malware.
 
-3. **Delivery**: 
-   - Sending malware to the target.
+3. **Delivery**: Sending malware to the target.
 
-4. **Exploitation**: 
-   - Exploiting vulnerabilities to gain access.
+4. **Exploitation**: Exploiting vulnerabilities to gain access.
 
-5. **Installation**: 
-   - Establishing a foothold on the system.
+5. **Installation**: Establishing a foothold on the system.
 
-6. **Command and Control (C2)**: 
-   - Remote control of the compromised system.
+6. **Command and Control (C2)**: Remote control of the compromised system.
 
-7. **Actions on Objectives**: 
-   - Achieving the attacker's goals (e.g., data theft).
+7. **Actions on Objectives**: Achieving the attacker's goals (e.g., data theft).
+
+8. **Exfiltration**: Stealing and sending data to the attacker.
+
+9. **Monetization**: Profiting from stolen data (e.g., selling on the dark web).
 ---
-
-8. **Exfiltration**: 
-   - Stealing and sending data to the attacker.
-
-9. **Monetization**: 
-   - Profiting from stolen data (e.g., selling on the dark web).
