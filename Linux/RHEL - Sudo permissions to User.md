@@ -7,7 +7,7 @@ Log in as a Root
 su -
 ```
 
-if user doen't exist, Add the User to the Sudo Group
+if the user doen't exist then add the User to the Sudo Group. Here users in the "wheel" group are granted sudo privileges by default.
 
 ```
 usermod -aG wheel teja
@@ -40,11 +40,16 @@ teja    ALL=(ALL)       ALL
 ```
 ![sudo permission](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0c7d4003-5bd7-4153-9e9c-2462cbb961a6)
 
+Set a password for the user "teja":
+```
+passwd Teja
+```
+
 Exit from root user. now try to switch from normal user to root user.
 
 ![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/4ff513ef-c4d7-4513-a093-20ca61fb1d95)
 
-We can also verify root user account.
+Switch to the user "Teja" and test sudo access:
 ```
 su - teja
 sudo whoami
