@@ -40,7 +40,7 @@ teja    ALL=(ALL)       ALL
 ```
 ![sudo permission](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/0c7d4003-5bd7-4153-9e9c-2462cbb961a6)
 
-Set a password for the user "teja":
+Set a password for the user "teja": (password: Tej@143)
 ```
 passwd Teja
 ```
