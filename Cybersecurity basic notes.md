@@ -3,7 +3,7 @@
 
 [Cybersecurity Frameworks](#Cybersecurity-Frameworks)
 
-[Common Cyber Attacks)](#Common-Cyber-Attacks)
+[Common Cyber Attacks](#Common-Cyber-Attacks)
 
 [OWASP](#owasp)
 
