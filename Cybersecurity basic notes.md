@@ -15,9 +15,9 @@
 
 ### Cybersecurity Frameworks
 
-1. **NIST Cybersecurity Framework**: > Guidelines for identifying, protecting, detecting, responding to, and recovering from cyberattacks.
+1. **NIST Cybersecurity Framework**: >Guidelines for identifying, protecting, detecting, responding to, and recovering from cyberattacks.
 
-2. **ISO 27001/27002**: > International standards for information security management systems (ISMS).
+2. **ISO 27001/27002**: >International standards for information security management systems (ISMS).
 
 3. **SOC 2**: Criteria for assessing security, availability, processing integrity, confidentiality, and privacy for cloud service providers.
 
