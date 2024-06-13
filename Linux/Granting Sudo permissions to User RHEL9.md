@@ -69,15 +69,7 @@ Set a password for the user "teja" (example password: Tej@143):
 passwd teja
 ```
 
-### 8. Exit from Root User
-
-Exit from the root user session:
-
-```sh
-exit
-```
-
-### 9. Switch to the User "teja" and Test Sudo Access
+### 8. Switch to the User "teja" and Test Sudo Access
 
 Switch to the user "teja" and test sudo access:
 
