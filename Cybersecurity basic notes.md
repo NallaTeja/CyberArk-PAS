@@ -15,83 +15,58 @@
 
 ### Cybersecurity Frameworks
 
-1. **NIST Cybersecurity Framework**: 
-   - Guidelines for identifying, protecting, detecting, responding to, and recovering from cyberattacks.
+1. **NIST Cybersecurity Framework**: Guidelines for identifying, protecting, detecting, responding to, and recovering from cyberattacks.
 
-2. **ISO 27001/27002**: 
-   - International standards for information security management systems (ISMS).
+2. **ISO 27001/27002**: International standards for information security management systems (ISMS).
 
-3. **SOC 2**: 
-   - Criteria for assessing security, availability, processing integrity, confidentiality, and privacy for cloud service providers.
+3. **SOC 2**: Criteria for assessing security, availability, processing integrity, confidentiality, and privacy for cloud service providers.
 
-4. **HIPAA**: 
-   - Standards for protecting health information.
+4. **HIPAA**: Standards for protecting health information.
 
-5. **GDPR**: 
-   - European Union's regulation focusing on data privacy and protection.
+5. **GDPR**: European Union's regulation focusing on data privacy and protection.
 
-6. **FISMA**: 
-   - Security requirements for federal agencies.
+6. **FISMA**: Security requirements for federal agencies.
 
-7. **NERC-CIP**: 
-   - Cybersecurity standards for electric reliability and critical infrastructure.
+7. **NERC-CIP**: Cybersecurity standards for electric reliability and critical infrastructure.
 
-8. **CIS Controls**: 
-   - Actionable best practices to enhance security posture.
+8. **CIS Controls**: Actionable best practices to enhance security posture.
 
-9. **COBIT**: 
-   - Framework for business-IT alignment and governance.
+9. **COBIT**: Framework for business-IT alignment and governance.
 
-10. **HITRUST CSF**: 
-    - Tailored cybersecurity framework for the healthcare industry.
+10. **HITRUST CSF**: Tailored cybersecurity framework for the healthcare industry.
 
-11. **NY DFS**: 
-    - New York's financial security regulation.
+11. **NY DFS**: New York's financial security regulation.
 ---
 
 ### Common Cyber Attacks
 
-1. **DDoS Attacks**: 
-   - Overwhelm a system with traffic to disrupt service.
+1. **DDoS Attacks**: Overwhelm a system with traffic to disrupt service.
 
-2. **Malware Attacks**: 
-   - Includes ransomware, trojans, and spyware that damage or steal data.
+2. **Malware Attacks**: Includes ransomware, trojans, and spyware that damage or steal data.
 
-3. **Phishing Attacks**: 
-   - Deceptive emails or messages tricking users into revealing sensitive information.
+3. **Phishing Attacks**: Deceptive emails or messages tricking users into revealing sensitive information.
 
-4. **Man-in-the-Middle Attacks**: 
-   - Intercepts communication between two parties to eavesdrop or alter the data.
+4. **Man-in-the-Middle Attacks**: Intercepts communication between two parties to eavesdrop or alter the data.
 
-5. **SQL Injection Attacks**: 
-   - Exploits database vulnerabilities to execute malicious SQL commands.
+5. **SQL Injection Attacks**:Exploits database vulnerabilities to execute malicious SQL commands.
 
-6. **Zero-Day Exploits**: 
-   - Exploits unknown software vulnerabilities before they are patched.
+6. **Zero-Day Exploits**:Exploits unknown software vulnerabilities before they are patched.
 
-7. **Password Attacks**: 
-   - Attempts to guess or crack passwords to gain unauthorized access, often using brute force methods.
+7. **Password Attacks**: Attempts to guess or crack passwords to gain unauthorized access, often using brute force methods.
 
-8. **Drive-by Download Attacks**: 
-   - Installs malware on a user's device through compromised websites without their knowledge.
+8. **Drive-by Download Attacks**: Installs malware on a user's device through compromised websites without their knowledge.
 
-9. **Cross-Site Scripting (XSS) Attacks**: 
-   - Injects malicious scripts into web pages viewed by other users.
+9. **Cross-Site Scripting (XSS) Attacks**: Injects malicious scripts into web pages viewed by other users.
 
-10. **Rootkits**: 
-    - Stealthy software that hides its presence and other malware on a system.
+10. **Rootkits**: Stealthy software that hides its presence and other malware on a system.
 
-11. **DNS Tunneling and Spoofing**: 
-    - Manipulates DNS queries to bypass security measures or exfiltrate data.
+11. **DNS Tunneling and Spoofing**: Manipulates DNS queries to bypass security measures or exfiltrate data.
 
-12. **Internet of Things (IoT) Attacks**: 
-    - Targets vulnerabilities in connected devices to gain access or cause disruption.
+12. **Internet of Things (IoT) Attacks**: Targets vulnerabilities in connected devices to gain access or cause disruption.
 
-13. **Session Hijacking**: 
-    - Takes over a user's session to impersonate them and gain unauthorized access.
+13. **Session Hijacking**:Takes over a user's session to impersonate them and gain unauthorized access.
 
-14. **URL Manipulation**: 
-    - Alters URLs to redirect users to malicious sites or steal information.
+14. **URL Manipulation**: Alters URLs to redirect users to malicious sites or steal information.
 ---
 
 ### OWASP
