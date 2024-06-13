@@ -295,3 +295,19 @@ check the log to see if there's any specific error message that can provide more
 ```
 sudo journalctl -xeu radiusd.service
 ```
+
+## Radius Installation 
+# The following instructions are for the following Linux or Unix platforms: RedHat/CentOS
+
+Run the following command:
+```
+sudo yum install gcc pam pam-devel make -y
+```
+![pam-devel](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/31cb4cf1-2477-4eb7-a07a-95076c54c9f8)
+
+At the prompt, enter the following lines:
+```
+sudo wget ftp://ftp.freeradius.org/pub/radius/pam_radius-x.x.x.tar.gz
+```
+
+![image](https://github.com/NallaTeja/CyberArk-PAS/assets/145950340/6d95a791-c77d-44c4-b400-2340bdf73f1d)
