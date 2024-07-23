@@ -2,6 +2,8 @@
 
 ---
 
+**Article:** https://docs.cyberark.com/pam-self-hosted/Latest/en/Content/PASIMP/Users-groups-add-users-PA.htm
+
 ## Introduction:
 Adding users to the "Vault Admins" group in the PrivateArk Client grants them administrative privileges within the CyberArk Vault. This guide provides step-by-step instructions for adding users to the "Vault Admins" group.
 
