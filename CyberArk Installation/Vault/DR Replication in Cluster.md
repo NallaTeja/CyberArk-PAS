@@ -2,9 +2,9 @@ Title: DR replication Steps
 Taken example IP address below for better understand.
 
 Primay VIP - 10.10.12.171
-Nodes
-Active Node: 10.10.12.168
-Passive Node: 10.10.12.167
+- Nodes
+-- Active Node: 10.10.12.168
+-- Passive Node: 10.10.12.167
 ![image](https://github.com/user-attachments/assets/8e0d5e27-5377-4a14-990f-bf79782dc5f1)
 
 Seconday VIP - 192.168.48.202
