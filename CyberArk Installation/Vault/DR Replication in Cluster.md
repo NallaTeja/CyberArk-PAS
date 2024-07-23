@@ -2,14 +2,12 @@ Title: DR replication Steps for syslogs
 Taken example IP address below for better understand.
 
 Primay VIP - 10.10.12.171
-- Nodes
 - Active Node: 10.10.12.168
 - Passive Node: 10.10.12.167
 
 ![image](https://github.com/user-attachments/assets/8e0d5e27-5377-4a14-990f-bf79782dc5f1)
 
 Seconday VIP - 192.168.48.202
-- Nodes
 - Active Node: 192.168.48.200
 - Passive Node: 192.168.48.201
 
@@ -24,8 +22,8 @@ Steps to be followed:-
 3. Loin into the Active Node: 192.168.48.200
 4. Turn OFF CVM
 5. *Primary Node* login into the Passive Node: 10.10.12.167
-6. update the dbparm.ini file path ~C:\Program Files (x86)\PrivateArk\Server~
-   Example:- ~C:\Program Files (x86)\PrivateArk\Server\Syslog. (Sample will be available copy that update accourdindly)~
+6. update the dbparm.ini file path ~~~ C:\Program Files (x86)\PrivateArk\Server ~~~
+   Example:- ~~ C:\Program Files (x86)\PrivateArk\Server\Syslog. (Sample will be available copy that update accourdindly) ~~
 ~~~
 [SYSLOG]
 SyslogTranslatorFile=Syslog\PTA.xsl
