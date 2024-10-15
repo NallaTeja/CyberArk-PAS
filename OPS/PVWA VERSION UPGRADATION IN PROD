@@ -1,0 +1,13 @@
+- Take the back-up (inetpub) of Pvwa files into new folder.
+- extract latest version cyberArk file
+- run the set up as administrator
+- After couple of Next 
+- Enter 2 vault IP & port 1858 & Pvwa url (server DNS.Domain.com/password/vault)
+- it will ask about administrator Password.
+-go to file path "C: Windows/temp/Pvwa/cyberArk.web.console.log"
+- In cyberArk.Web.console.log file at the bottom will see cyberArk version & start signalR configuration initialization.
+- Open cmd as administrator.
+  iisreset /status
+- go to filepath "C: inetpub/wwwroot/passwordVault/saml.config"
+- check saml.config file is existing or not if not need to copy past from backup file. 
+- got to service check services are running (cyberArk application password provider, cyberArk schedule tasks)
