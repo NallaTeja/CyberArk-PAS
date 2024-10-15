@@ -11,3 +11,4 @@
 - go to filepath "C: inetpub/wwwroot/passwordVault/saml.config"
 - check saml.config file is existing or not if not need to copy past from backup file. 
 - got to service check services are running (cyberArk application password provider, cyberArk schedule tasks)
+- check the url of version upgradaded server & authenticate. 
