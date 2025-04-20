@@ -224,8 +224,8 @@
    ![Windows updates Installing](https://github.com/user-attachments/assets/6b8a8aaf-922f-4b3a-96ec-cd3a75c6a489)
 
 4. Restart the system once updates are completed.
-   **Method 1:**
+   - **Method 1:**
    ![image](https://github.com/user-attachments/assets/782708ce-790c-4e29-82af-b2612e5974c5)
 
-   **Method 2:**
+   - **Method 2:**
    ![Other Unplanned](https://github.com/user-attachments/assets/7bea4f15-1d58-4c0b-bd92-b77d1b88a9d1)
