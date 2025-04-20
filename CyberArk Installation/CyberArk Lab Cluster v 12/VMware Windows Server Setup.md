@@ -101,7 +101,6 @@
 ## Step 12: Edit VM Settings (Optional)
 1. In VMware Home, select **Node_A**.
 2. Click **Edit virtual machine settings**.
-# Virtual Machine Configuration and Windows Server 2016 Setup Notes
 
 ---
 
@@ -196,14 +195,18 @@
 
 3. Follow the setup prompts:
    - Click **Next** to proceed with installation.
+
      ![VMware tools 12.3](https://github.com/user-attachments/assets/ca193e90-b210-483c-b83b-aa0ad727be12)
    - Choose **Complete Setup** and click **Next**.
+
      ![Choose setup type](https://github.com/user-attachments/assets/f616094b-9565-476a-b3e7-78b3114c8901)
 
 4. Click **Install** to finalize the installation.
+
    ![install](https://github.com/user-attachments/assets/8b7c3812-1193-45f1-b7e6-1f5a734017f4)
 
 5. Skip the restart option by clicking **No**.
+
    ![Restart no](https://github.com/user-attachments/assets/16c85daa-585b-41de-b5e7-329eda1cb6b6)
 
 ---
@@ -212,12 +215,15 @@
 1. Open the **Server Manager** application.
 2. Go to the **Local Server** option.
 3. Double-click on the computer name (e.g., **WIN-7VTB3NJT655**) to access system properties.
+
    ![change computer name](https://github.com/user-attachments/assets/79701098-164d-4066-a87f-a26931a0e9bd)
 
 4. Click **Change** to rename the computer (e.g., **Node_A**). Click **OK** twice and **Close**.
+
    ![Close the system properties](https://github.com/user-attachments/assets/3af9af58-8687-4115-90af-e0b5096611ce)
 
 5. Skip the restart by clicking **Restart Later**.
+
    ![restart later](https://github.com/user-attachments/assets/59a68d4e-062f-421e-884f-4820d6fbbf03)
 
 ---
