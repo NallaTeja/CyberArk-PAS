@@ -153,12 +153,14 @@
 2. Accept the license terms:
    - Check the box **I accept the license terms.**
    - Click **Next.**
+
    ![Applicable notices and license terms](https://github.com/user-attachments/assets/39b24666-e5e4-4c4b-97d4-d04e6f5d34ea)
 
 3. Select **Custom: Install Windows Only (Advanced).**
    ![Custom: Install windows only](https://github.com/user-attachments/assets/6c82afa2-1c0e-4c40-adc1-7270780e6ede)
 
 4. Allocate 20 GB for the drive and click **Next.**
+
    ![where do you want to install windows](https://github.com/user-attachments/assets/6e23e0c2-6460-4ba0-99e6-4a9edc1e2763)
 
 ---
