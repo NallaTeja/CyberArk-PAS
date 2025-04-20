@@ -139,6 +139,7 @@
 
 ### Step 15: Power on the Virtual Machine
 1. Power on the Virtual Machine.
+
    ![Power on](https://github.com/user-attachments/assets/da6328e3-9572-41d7-ae93-e276ab9f1592)
 
 2. In Windows Setup, adjust settings:
@@ -146,6 +147,7 @@
    ![Time and currency format](https://github.com/user-attachments/assets/a1217a6e-f693-4fcb-9693-fb323ba4ab7f)
 
 3. Click **Install Now** to proceed.
+
    ![Install now](https://github.com/user-attachments/assets/9e90c30a-f96f-4966-862d-b7721b32f088)
 
 ---
