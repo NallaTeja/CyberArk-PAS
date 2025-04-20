@@ -110,17 +110,21 @@
 2. Enable **Share Folders** as 'Always Enable.'
 3. Check **Map as network drive in Windows guests.**
 4. Click **Add** and then **Next**.
+
    ![Edit virtual machine settings](https://github.com/user-attachments/assets/d1bb40d8-ae43-42bb-b1af-ee0f122e026f)
 
 5. Name the shared folder and browse the host path. Click **Next**.
+
    ![Name the share folder](https://github.com/user-attachments/assets/5a0cb530-8d9a-48ab-bd97-bf3652daf770)
 
 6. Specify shared folder attributes:
    - Check **Enable this share.**
    - Click **Finish.**
+
    ![image](https://github.com/user-attachments/assets/48916e41-5c85-493e-a832-00bae89e6a3f)
 
 7. Click **OK** to enable shared folders.
+
    ![enabling the sharefolders](https://github.com/user-attachments/assets/1887099a-0337-4420-ada7-2672cc96b606)
 
 ---
