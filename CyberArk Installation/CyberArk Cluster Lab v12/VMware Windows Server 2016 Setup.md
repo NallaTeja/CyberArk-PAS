@@ -241,9 +241,50 @@
    ![Windows updates Installing](https://github.com/user-attachments/assets/6b8a8aaf-922f-4b3a-96ec-cd3a75c6a489)
 
 4. Restart the system once updates are completed.
-   - **Method 1:**
+
    ![image](https://github.com/user-attachments/assets/782708ce-790c-4e29-82af-b2612e5974c5)
 
-   - **Method 2:** 
+---
 
-   ![Other Unplanned](https://github.com/user-attachments/assets/7bea4f15-1d58-4c0b-bd92-b77d1b88a9d1)
+## Step 21: Install .NET Framework 4.8
+
+### Overview
+.NET Framework 4.8 is a Windows-only version of .NET, designed for building client and server applications. Download it from the official site:
+[Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+
+### Installation Steps
+1. **Run as Administrator:**
+   Launch the installer as an administrator.  
+   ![Run .NET Framework 4.8](https://github.com/user-attachments/assets/a46e72a4-b873-446b-95ef-fd7549dcae3e)
+
+2. **Accept License Terms:**
+   - Check the box labeled **'I agree to the license terms and conditions'**.
+   - Click **'Install'**.  
+   ![Accept License terms](https://github.com/user-attachments/assets/a30deade-52d7-4541-b1b5-dffc3e5daa16)
+
+3. **Setup Progress:**
+   - Wait for the installation process to complete.  
+   ![Setup Progress](https://github.com/user-attachments/assets/156abd55-15df-4ff6-b1b7-478c61f13d5a)
+
+4. **Close the Installer:**
+   - Click **'Close'** once the installation is complete.  
+   ![Close](https://github.com/user-attachments/assets/dff0a19f-f57a-48db-84a5-7c0886015022)
+
+---
+
+## Step 22: Install Microsoft Visual C++ 2015-2022 Redistributable (x64 & x86)
+
+### Overview
+The Microsoft Visual C++ Redistributable packages are essential for running applications built using Visual Studio. Download the latest version from the official Microsoft documentation:  
+[Download Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+### Verification
+After installation, confirm that both the x64 and x86 versions have been successfully installed.  
+![CP MS VC installed](https://github.com/user-attachments/assets/19da6c85-42f2-4008-9827-847b667343d7)
+
+---
+
+## Step 23: Restart the System
+
+Restart your computer to ensure the newly installed packages are fully updated and functional.  
+![Other Unplanned](https://github.com/user-attachments/assets/7bea4f15-1d58-4c0b-bd92-b77d1b88a9d1)
