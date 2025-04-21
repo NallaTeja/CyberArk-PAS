@@ -180,6 +180,9 @@
    - Password: **Tej@143!!**
    - Click **Finish.**
 
+![Customize settings](https://github.com/user-attachments/assets/5e0b9998-c843-4b6d-8951-7b46b7a7b3bc)
+
+
 3. Press **Ctrl+Alt+Delete** or use the Enter option to unlock.
    ![Ctrl+Alt+Delete to unlock](https://github.com/user-attachments/assets/626be5fa-37e1-440f-a5f5-bef0b53b626c)
 
