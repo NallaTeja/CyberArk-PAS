@@ -176,8 +176,10 @@
    ![Getting ready](https://github.com/user-attachments/assets/607ddaa8-8d04-4d41-8ef9-032a8ecd871c)
 
 2. Customize settings:
-   - Username: **Administrator.**
-   - Password: **Tej@143!!**
+- **Username:**
+  ```Administrator```
+- **Password:**
+  ```Tej@143!!```
    - Click **Finish.**
 
 ![Customize settings](https://github.com/user-attachments/assets/5e0b9998-c843-4b6d-8951-7b46b7a7b3bc)
