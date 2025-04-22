@@ -202,8 +202,6 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 5. Under **Target Name and Access**, enter **Quorm**, then click **Next**.
 
-   ![Target Name](https://github.com/user-attachments/assets/8a10f66c-5b77-4aae-b64b-5107df43f5d2)
-
 6. Under **Access Servers**, click **Add**, then:
    - Select **IP Address** from the dropdown.
    - Enter **NodeA (192.168.137.30)** and **NodeB (192.168.138.50)** (Public IP).
@@ -239,8 +237,6 @@ To install a CyberArk HA Cluster, the following three servers are needed:
    ![iSCSI Virtual Disk Size 20](https://github.com/user-attachments/assets/5a3923e3-afc1-4d53-9274-4a34853d7228)
 
 5. Under **iSCSI Target**, select **New iSCSI Target**, then click **Next**.
-
-   ![New iSCSI Target](https://github.com/user-attachments/assets/289198f2-9eff-4f5f-a083-2750199e33c8)
 
 6. Under **Target Name and Access**, enter **Share**, then click **Next**.
 
