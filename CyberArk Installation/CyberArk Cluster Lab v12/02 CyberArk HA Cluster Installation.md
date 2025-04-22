@@ -127,10 +127,30 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 ---
 
-## Note:
+## Open Windows firewall rule for all 3 servers, enable In & Out bound rules.
+1. Inbound Rules
+Open Windows firewall rule select 'Inbound Rules'. Under Actions select 'New Rule'.
+![Program click Next](https://github.com/user-attachments/assets/c2bc9bac-08d3-4b49-b108-eadd94f2345e)
 
-Now, **pinging other servers** may not be possible due to firewall rules.  
-To allow communication between servers, **Inbound & Outbound firewall rules** need to be enabled after **Vault installation hardening**.
+Select 'All program' and click 'Next'
+![New Firewall rule Inboudn all program](https://github.com/user-attachments/assets/1f53d577-291b-44b4-8965-3b99588f4f3f)
+
+Select "Allow the connection" and click 'Next'
+![Allow the connection](https://github.com/user-attachments/assets/a021a3f4-027c-4497-a1b3-1dcd8aeb52e4)
+
+Profile allow all check box- Domain, Private, Public and click 'Next'. 
+![Profile](https://github.com/user-attachments/assets/0a2d9c5e-fd32-48b1-91fb-7d65761835c2)
+
+Give any Name as per your request and click 'Finish'.
+![Name](https://github.com/user-attachments/assets/bc29fd4f-ed70-4f95-988f-b8c5d56c0c83)
+
+
+2. Repeate same steps for Outbound Rules
+
+![Outbound Rules](https://github.com/user-attachments/assets/2e2e6f54-07dc-460d-82c5-713f960bd2aa)
+
+
+Do the ping test in command promt for connection test. 
 
 ---
 # iSCSI Target Server Setup Guide
@@ -248,4 +268,17 @@ To allow communication between servers, **Inbound & Outbound firewall rules** ne
     ![Result and close](https://github.com/user-attachments/assets/3d5c77b0-0974-4883-88ee-f93edc22040d)
 
 ---
+
+Go to server NodeA, open server manager. Under Tools select 'iSCSI Initator'
+![iSCSI Initator](https://github.com/user-attachments/assets/c5f9e671-31b0-4e82-bae0-6a8d57f9c6aa)
+
+Service is not running, click 'Yes' button.
+![image](https://github.com/user-attachments/assets/09213dd4-7b90-4caa-8f07-b3f969e91650)
+
+
+
+
+
+
+
 
