@@ -30,10 +30,10 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 2. Locate **Ethernet0**.
 3. Open **IPv4 Properties**.
 4. Set:
-   - **IP Address**: `192.168.5.141`
+   - **IP Address**: `192.168.137.10`
    - **Subnet Mask**: `255.255.255.0`
-
-   ![SanDrive01 IP](https://github.com/user-attachments/assets/47c1f3da-8e97-495b-95b1-bdd44ed13f27)
+   
+   ![SanDrive01 IPe](https://github.com/user-attachments/assets/910206ff-bcd0-4ac2-96c7-468b76b89d83)
 
 ---
 
@@ -60,10 +60,10 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 ### **Step 3.4: Configure Public Network**
 1. Define:
-   - **IP Address**: `192.168.137.2`
+   - **IP Address**: `192.168.137.30`
    - **Subnet Mask**: `255.255.255.0`
 
-   ![NodeA IP](https://github.com/user-attachments/assets/1d495781-a34a-4fd1-93f6-1eda1dd472ab)
+![NodeA IP](https://github.com/user-attachments/assets/d4e48e3b-588a-447e-86dd-357d96c725f0)
 
 2. Enable **Sharing** in **Public Properties**.
 
@@ -75,23 +75,14 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 ### **Step 3.5: Configure Private Network**
 1. Define:
-   - **IP Address**: `192.168.137.1`
+   - **IP Address**: `192.168.137.20`
    - **Subnet Mask**: `255.255.255.0`
 
-   ![Private network](https://github.com/user-attachments/assets/cbcd67d1-88af-4232-9c71-59a859bb6060)
+![Private network](https://github.com/user-attachments/assets/46d9ab66-2ccd-46f8-b2ce-fd632158d129)
 
-2. Change **Network Adapter** from **NAT** to **Custom: Specific Virtual Network** → **VMnet0**.
+3. Change **Network Adapter** from **NAT** to **Custom: Specific Virtual Network** → **VMnet0**.
 
    ![Network Adapter Public](https://github.com/user-attachments/assets/5e89943c-3adc-4caa-b457-90e0b8f7ebe7)
-
----
-
-### ⚠ **Production Environment Considerations**
-1. **Disable Internet connection sharing** in Public properties.
-2. **Uncheck all connection users** except IPv4 & IPv6.
-3. Ensure **public and private networks** are correctly assigned.
-
-   ![Network Connections](https://github.com/user-attachments/assets/2d21ce36-2299-460f-8779-960fce1664fe)
 
 ---
 
@@ -114,34 +105,34 @@ To install a CyberArk HA Cluster, the following three servers are needed:
    - **IP Address**: `192.168.138.1`
    - **Subnet Mask**: `255.255.255.0`
 
-   ![NodeB IP Public](https://github.com/user-attachments/assets/1be89968-250c-4acd-9c82-75c808659bbc)
+![NodeB IP Public](https://github.com/user-attachments/assets/f9384596-6bf1-4363-afe3-e679b5ba826e)
 
-2. **Uncheck all connection users** except IPv4 & IPv6.
+3. **Uncheck all connection users** except IPv4 & IPv6.
 
 ### **Step 4.4: Configure Private Network**
 1. Define:
-   - **IP Address**: `192.168.138.2`
+   - **IP Address**: `192.168.138.40`
    - **Subnet Mask**: `255.255.255.0`
 
-   ![NodeB IP Private](https://github.com/user-attachments/assets/f7e542b4-c98a-43d5-b5de-8e42a2e884b8)
+ ![NodeB IP Private](https://github.com/user-attachments/assets/5925bebf-4d00-4c74-95a8-75d66bb521f1)
 
 ---
 
 ## Open Windows firewall rule for all 3 servers, enable In & Out bound rules.
 1. Inbound Rules
-Open Windows firewall rule select 'Inbound Rules'. Under Actions select 'New Rule'.
+ - Open Windows firewall rule select 'Inbound Rules'. Under Actions select 'New Rule'.
 ![Program click Next](https://github.com/user-attachments/assets/c2bc9bac-08d3-4b49-b108-eadd94f2345e)
 
-Select 'All program' and click 'Next'
+- Select 'All program' and click 'Next'
 ![New Firewall rule Inboudn all program](https://github.com/user-attachments/assets/1f53d577-291b-44b4-8965-3b99588f4f3f)
 
-Select "Allow the connection" and click 'Next'
+- Select "Allow the connection" and click 'Next'
 ![Allow the connection](https://github.com/user-attachments/assets/a021a3f4-027c-4497-a1b3-1dcd8aeb52e4)
 
-Profile allow all check box- Domain, Private, Public and click 'Next'. 
+- Profile allow all check box- Domain, Private, Public and click 'Next'. 
 ![Profile](https://github.com/user-attachments/assets/0a2d9c5e-fd32-48b1-91fb-7d65761835c2)
 
-Give any Name as per your request and click 'Finish'.
+- Give any Name as per your request and click 'Finish'.
 ![Name](https://github.com/user-attachments/assets/bc29fd4f-ed70-4f95-988f-b8c5d56c0c83)
 
 
@@ -150,7 +141,10 @@ Give any Name as per your request and click 'Finish'.
 ![Outbound Rules](https://github.com/user-attachments/assets/2e2e6f54-07dc-460d-82c5-713f960bd2aa)
 
 
-Do the ping test in command promt for connection test. 
+- Do the ping test in command promt for connection test.
+
+  ![cmd ping test result](https://github.com/user-attachments/assets/2a2a8e11-faf4-4c32-8daf-6c697ba3a62f)
+
 
 ---
 # iSCSI Target Server Setup Guide
@@ -193,51 +187,52 @@ Do the ping test in command promt for connection test.
 
    ![iSCSI Virtual Disk location](https://github.com/user-attachments/assets/4cfcb795-606e-4db9-b6fb-65f3d8346434)
 
-### Creating "Quorum" Disk
-1. Under **iSCSI Virtual Disk Name**, enter **Quorum**, then click **Next**.
+### Creating "Quorm" Disk
+1. Under **iSCSI Virtual Disk Name**, enter **Quorm**, then click **Next**.
 
-   ![iSCSI Virtual Disk Name](https://github.com/user-attachments/assets/f81cfd0f-a5a0-472d-9f2c-627d63459fa0)
+![iSCSI Virtual Disk Name](https://github.com/user-attachments/assets/e1a04f16-c7b6-4376-ac26-d435c9a980ff)
 
-2. Under **iSCSI Virtual Disk Size**, set **Size: 10 GB**, then click **Next**.
+3. Under **iSCSI Virtual Disk Size**, set **Size: 10 GB**, then click **Next**.
 
    ![iSCSI Virtual Disk Size](https://github.com/user-attachments/assets/ee4964c2-df34-4e02-bc1e-926dd5429b10)
 
-3. Under **iSCSI Target**, select **New iSCSI Target**, then click **Next**.
+4. Under **iSCSI Target**, select **New iSCSI Target**, then click **Next**.
 
    ![iSCSI Target](https://github.com/user-attachments/assets/97cba4b6-c26a-4273-9f59-3be82f55a83c)
 
-4. Under **Target Name and Access**, enter **Quorum**, then click **Next**.
+5. Under **Target Name and Access**, enter **Quorm**, then click **Next**.
 
    ![Target Name](https://github.com/user-attachments/assets/8a10f66c-5b77-4aae-b64b-5107df43f5d2)
 
-5. Under **Access Servers**, click **Add**, then:
+6. Under **Access Servers**, click **Add**, then:
    - Select **IP Address** from the dropdown.
-   - Enter **NodeA (192.168.137.2)** and **NodeB (192.168.138.1)** (Public IP).
+   - Enter **NodeA (192.168.137.30)** and **NodeB (192.168.138.50)** (Public IP).
 
-   ![Access Servers](https://github.com/user-attachments/assets/6dd41928-cdfe-4496-9d49-b8ea1aba457d)
+![Access Servers](https://github.com/user-attachments/assets/67f9f7e5-b9a8-45d5-b407-d7829a216f73)
 
-6. After adding both Node servers, click **Next**.
+8. After adding both Node servers, click **Next**.
 
    ![Added 2 node servers](https://github.com/user-attachments/assets/dbec581b-0f17-46bd-8c7c-9faad322332a)
 
-7. Keep the default **Enable Authentication** settings, then click **Next**.
-8. Under **Confirmation**, click **Create**, then **Close**.
+9. Keep the default **Enable Authentication** settings, then click **Next**.
+10. Under **Confirmation**, click **Create**, then **Close**.
 
-   ![Confirmation](https://github.com/user-attachments/assets/a093abd2-5095-4d5c-be32-101af719ead3)
-   ![Result](https://github.com/user-attachments/assets/4d1140da-671d-4b2d-b475-d93d070cf301)
+![[Confirmation](https://github.com/user-attachments/assets/9859e08c-e36a-4ddc-815f-dcaf71177272)
 
-### Creating "Shared" Disk
+![Result](https://github.com/user-attachments/assets/4d1140da-671d-4b2d-b475-d93d070cf301)
+
+### Creating "Share" Disk
 1. Right-click and select **New iSCSI Virtual Disk**.
 
-   ![New iSCSI Virtual Disk](https://github.com/user-attachments/assets/9278ab52-b33b-4933-aa26-b51bb6f9f604)
+   !New iSCSI Virtual Disk](https://github.com/user-attachments/assets/26da40c3-f774-49e8-8676-32097f8e780d)
 
 2. Under **iSCSI Virtual Disk Location**, click **Next**.
 
    ![iSCSI Virtual Disk Location](https://github.com/user-attachments/assets/22955946-9861-4a43-8fa0-0026e7710250)
 
-3. Under **iSCSI Virtual Disk Name**, enter **Shared**, then click **Next**.
+3. Under **iSCSI Virtual Disk Name**, enter **Share**, then click **Next**.
 
-   ![iSCSI Virtual Disk Name shared](https://github.com/user-attachments/assets/ca68f0ff-2729-458e-975f-2ebcd6dc650a)
+   ![iSCSI Virtual Disk Name](https://github.com/user-attachments/assets/0af241db-7b54-43da-a19f-f9a5e4a28f18)
 
 4. Under **iSCSI Virtual Disk Size**, set **Size: 20 GB**, then click **Next**.
 
@@ -247,15 +242,15 @@ Do the ping test in command promt for connection test.
 
    ![New iSCSI Target](https://github.com/user-attachments/assets/289198f2-9eff-4f5f-a083-2750199e33c8)
 
-6. Under **Target Name and Access**, enter **Shared**, then click **Next**.
+6. Under **Target Name and Access**, enter **Share**, then click **Next**.
 
-   ![Target Name and Access shared](https://github.com/user-attachments/assets/2c407adf-49cd-464a-b84c-cd10b4af5c79)
+  ![Target Name and Access share](https://github.com/user-attachments/assets/5cfd07ca-4276-4479-8138-07222f21349d)
 
 7. Under **Access Servers**, click **Add**, then:
    - Select **IP Address** from the dropdown.
-   - Enter **NodeA (192.168.137.2)** and **NodeB (192.168.138.1)** (Public IP).
+   - Enter **NodeA (192.168.137.30)** and **NodeB (192.168.138.50)** (Public IP).
 
-   ![Access Servers](https://github.com/user-attachments/assets/5cabc33c-bd4a-4f18-96dd-d17315345d7e)
+  ![Access Servers](https://github.com/user-attachments/assets/283c1a7a-c1e8-4706-a6f1-9f473df8d199)
 
 8. After adding both Node servers, click **Next**.
 
@@ -264,7 +259,7 @@ Do the ping test in command promt for connection test.
 9. Keep the default **Enable Authentication** settings, then click **Next**.
 10. Under **Confirmation**, click **Create**, then **Close**.
 
-    ![Confirmation](https://github.com/user-attachments/assets/41fb71c3-5aab-46a7-8f11-2f97830ab5ca)
+    ![Confirmation](https://github.com/user-attachments/assets/726c2397-bc2a-4003-83d0-b5080ddc6446)
     ![Result and close](https://github.com/user-attachments/assets/3d5c77b0-0974-4883-88ee-f93edc22040d)
 
 ---
