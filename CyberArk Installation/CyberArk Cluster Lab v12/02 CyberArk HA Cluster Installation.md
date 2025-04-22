@@ -222,7 +222,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 ### Creating "Share" Disk
 1. Right-click and select **New iSCSI Virtual Disk**.
 
-   !New iSCSI Virtual Disk](https://github.com/user-attachments/assets/26da40c3-f774-49e8-8676-32097f8e780d)
+   ![New iSCSI Virtual Disk](https://github.com/user-attachments/assets/26da40c3-f774-49e8-8676-32097f8e780d)
 
 2. Under **iSCSI Virtual Disk Location**, click **Next**.
 
