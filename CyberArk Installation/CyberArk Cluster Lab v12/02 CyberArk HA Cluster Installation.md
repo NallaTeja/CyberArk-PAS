@@ -326,6 +326,68 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 ## Step 11: Launching iSCSI Initiator 
 - Repeat the same **Steps 1 to 5** for NodeB
+- Under Disk Management both quorm and share will be offline.
+  ![2 Disk Offline](https://github.com/user-attachments/assets/59eaa7fa-6d20-43e0-ab1d-e30c7bf06c7a)
+
+---
+
+# CyberArk HA Cluster Installation
+
+ Copy paste all the CyberArk components. Right click 'Setup' select "Run as administrator"
+ ![Run as administrator](https://github.com/user-attachments/assets/b850e8b9-59bb-4160-8a8b-1554bf87ce91)
+
+Welcome to CyberArk Digital Vault 12.0.0 Setup, click "Next"
+![CyberArk Digital Vault Setup](https://github.com/user-attachments/assets/c6228e48-ff71-4468-94d3-498b7c612faf)
+
+Click 'yes' for License Agreement.
+![License Agreement](https://github.com/user-attachments/assets/5c91cf20-9bf5-4bee-9374-3cb5d72b39af)
+
+User information 
+-> Name: `CyberArkClusterLab`
+-> Comapany: `CyberArkClusterLab.com`
+![User information ](https://github.com/user-attachments/assets/9e531bdd-7cce-4b47-87ea-db1225aad8b7)
+
+Vault Installation Mode 
+- Click **Cluster-node Vault Installation**
+![Vault Installation Mode ](https://github.com/user-attachments/assets/9b418cb1-4e1d-47a9-9664-f372cd90daae)
+
+Choose Destination location, keep the default path. Click 'Next'
+![image](https://github.com/user-attachments/assets/b61e679f-7bb7-4c13-81b2-a9c6424a376a)
+
+Choose Safe location, Created the 'safes' folder in Share drive. Browse the path and select 'Next'
+![Choose Safe location](https://github.com/user-attachments/assets/04388cb5-f2a0-4100-8c57-a04b77c770f1)
+
+License File Path, Browse the Destination folder 'License' and click 'Next'
+![License File Path](https://github.com/user-attachments/assets/37ff36ec-1cb0-45a7-9660-10abe6f9a510)
+
+Operator CD Path, Browse the Destination folder 'DemoOperatorKeys' and click 'Next'
+![Operator CD Path](https://github.com/user-attachments/assets/0ac0cb8d-a326-458a-bcbe-5468e766bc5b)
+
+Configuring the remote control agent, select "Skip Remote Control Agent Configuration". Click 'Next'
+![Configuring the remote control agent](https://github.com/user-attachments/assets/019a131b-9084-4a90-92cf-155995a77c2a)
+
+Vault Server Machine Hardening, Click 'Next'
+![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)
+
+Select Program Folder, Program folders: `CyberArk Digital Vault`. After click 'Next', setup starts performing Vault Hardening. Will start installing vault database. 
+![Select Program Folder](https://github.com/user-attachments/assets/a6314632-6147-4256-a68e-7c08d1cad136)
+
+Before entering the Master password and Administrator password. Browse private Ark folder navigate to 'bdparm'. Copy past the 'bdparm.ini' file into desktop and add below Firewall rule line and replace the file. 
+Firewall rule `AllowNonStandardFWAddress=[192.168.137.10],Yes,3260:outbound/tcp,inbound/tcp`
+File Path `C:\Program Files (x86)\PrivateArk\Server\Conf` file name 'dbparm.ini'
+Note: By adding Firewall rule it won't block the communication between storage. 
+![dbparm FW update](https://github.com/user-attachments/assets/3f511a86-6ae3-4478-9bc4-3f09869e5074)
+
+Now we can enter the 'Master password and Administrator password' and click 'Next'
+Master password: `P@ssw0rd123`
+Administrator password: `Secur1tyP@ss`
+!['Master password and Administrator password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)
+
+Got below error. "Failed to start service PrivateArk Server"
+![Failed to start PrivateArk Server](https://github.com/user-attachments/assets/e82f40d0-0045-4f9a-abca-5922cdb2769d)
+
+
+
 
 
 
