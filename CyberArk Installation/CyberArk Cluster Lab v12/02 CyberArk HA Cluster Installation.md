@@ -385,6 +385,8 @@ Administrator password: `Secur1tyP@ss`
 
 Got below error. "Failed to start service PrivateArk Server"
 ![Failed to start PrivateArk Server](https://github.com/user-attachments/assets/e82f40d0-0045-4f9a-abca-5922cdb2769d)
+Uninstalling the software
+![image](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)
 
 Resolution Article: https://community.cyberark.com/s/article/00004319
 Will try below password, due to password complexity got error. will reinstall the setup. 
