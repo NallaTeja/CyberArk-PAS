@@ -46,10 +46,11 @@ To install a CyberArk HA Cluster, the following three servers are needed:
    ![Network Adapter Setup](https://github.com/user-attachments/assets/a45062cb-1f3d-4fa1-bef1-a8111ffb8db0)
 
 ### **Step 3.2: Assign VMnet0**
-1. Under **Network Adapter 2**, set:
+1. Under **Network Adapter** & **Network Adapter 2**, set:
    - **Custom: Specific Virtual Network** → **VMnet0**.
 
-   ![Adapter Custom](https://github.com/user-attachments/assets/e5a54752-5770-4181-9f74-522cecc00c21)
+  ![Network Adapter](https://github.com/user-attachments/assets/dabd5433-4635-4ead-91fd-eb712b022bfe)
+
 
 ### **Step 3.3: Rename Ethernet Interfaces**
 1. Rename **Ethernet0** → **Public**.
@@ -119,7 +120,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 ---
 
 ## Open Windows firewall rule for all 3 servers, enable In & Out bound rules.
-1. Inbound Rules
+1. **Inbound Rules**
  - Open Windows firewall rule select 'Inbound Rules'. Under Actions select 'New Rule'.
 ![Program click Next](https://github.com/user-attachments/assets/c2bc9bac-08d3-4b49-b108-eadd94f2345e)
 
@@ -136,12 +137,12 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 ![Name](https://github.com/user-attachments/assets/bc29fd4f-ed70-4f95-988f-b8c5d56c0c83)
 
 
-2. Repeate same steps for Outbound Rules
+2. Repeate same steps for **Outbound Rules**
 
 ![Outbound Rules](https://github.com/user-attachments/assets/2e2e6f54-07dc-460d-82c5-713f960bd2aa)
 
 
-- Do the ping test in command promt for connection test.
+- Do the **ping test** in command promt for connection test.
 
   ![cmd ping test result](https://github.com/user-attachments/assets/2a2a8e11-faf4-4c32-8daf-6c697ba3a62f)
 
@@ -260,11 +261,73 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 ---
 
-Go to server NodeA, open server manager. Under Tools select 'iSCSI Initator'
-![iSCSI Initator](https://github.com/user-attachments/assets/c5f9e671-31b0-4e82-bae0-6a8d57f9c6aa)
+# iSCSI Configuration Guide
 
-Service is not running, click 'Yes' button.
-![image](https://github.com/user-attachments/assets/09213dd4-7b90-4caa-8f07-b3f969e91650)
+## Step 1: Launching iSCSI Initiator
+1. Go to **Server NodeA**.
+2. Open **Server Manager**.
+3. Under **Tools**, select **iSCSI Initiator**.  
+![iSCSI Initiator](https://github.com/user-attachments/assets/c5f9e671-31b0-4e82-bae0-6a8d57f9c6aa)
+
+## Step 2: Starting the iSCSI Service
+- If the service is not running, click **Yes** to start it.  
+![Service Start](https://github.com/user-attachments/assets/09213dd4-7b90-4caa-8f07-b3f969e91650)
+
+## Step 3: Configuring iSCSI Initiator
+1. In **iSCSI Initiator Properties**, enter the target server IP **(SanDrive01)** as `192.168.137.10`.
+2. Click **Quick Connect**.  
+![iSCSI Initiator Properties](https://github.com/user-attachments/assets/42c868c7-841a-4718-8a3c-b3180098900d)
+
+## Step 4: Connecting to Targets
+1. In **Quick Connect**, under **Discovered Targets**, select both **quorum** and **share**, one at a time.
+2. Click **Connect** for each.  
+![Quick Connect](https://github.com/user-attachments/assets/f58aa758-46e0-4add-addf-70b5b7e7c4a0)
+3. Once connected, a success message will appear. Click **Done**.  
+![Login Success](https://github.com/user-attachments/assets/474a4e07-ce3c-4c7b-8a0e-9d6ccbb790a6)
+
+## Step 5: Configuring Volumes and Devices
+1. In **iSCSI Initiator Properties**, go to the **Volumes and Devices** tab.
+2. Click **Auto Configure** to populate **quorum** and **share**.
+3. Click **OK**.  
+![Auto Configure](https://github.com/user-attachments/assets/be261d97-51f3-488c-97cc-17f16e9cb5a8)
+
+## Step 6: Managing Disks
+1. Type `diskmgmt` in PowerShell to open **Disk Management**.
+2. Make **Disk 1** and **Disk 2** **Online**.  
+![Disk Online](https://github.com/user-attachments/assets/99c9b29a-036a-43f9-8a26-df18b6870e73)
+
+## Step 7: Initializing Disks
+1. After the disks are online, right-click on **Disk 1**.
+2. Select **Initialize Disk**.
+3. Select both disks and choose **MBR** (Master Boot Record).  
+![Initialize Disk](https://github.com/user-attachments/assets/d261b2ec-a7b1-42b5-8a89-88006e92bfbe)
+
+## Step 8: Creating a New Volume
+1. Right-click on **Disk 1 (Unallocated 10 GB)** and select **New Simple Volume Wizard**.
+2. In **Specify Volume Size**, keep the default value `10237`.  
+![New Simple Volume Wizard](https://github.com/user-attachments/assets/4e65e466-6da5-4bf4-a48b-374bd2a890ed)
+
+3. In **Assign Drive Letter or Path**, choose **Assign the following drive letter**, and select **Q**.  
+![Assign Drive Letter](https://github.com/user-attachments/assets/ea9fc42a-4c6d-4c63-9fa9-8b1c35c3cb90)
+
+4. In **Format Partition**, keep the default **NTFS** format, then click **Next** and **Finish**.  
+![Finish Partition](https://github.com/user-attachments/assets/96da1f39-77fe-481b-9ef7-f090e343d25b)
+
+## Step 9: Creating a New Volume
+1. Repeat the same **steps 8** for Disk 2
+2. In **Specify Volume Size**, keep the default value `20477`.
+3. In **Assign Drive Letter or Path**, choose **Assign the following drive letter**, and select **S**.
+4. In **Format Partition**, keep the default **NTFS** format, then click **Next** and **Finish**.   
+![Finish Partition](https://github.com/user-attachments/assets/3cda27bb-2c84-45ae-97da-412e297aad56)
+
+## Step 10: Verfiying Online Drives
+- Once both drives are online, you can confirm their availability by navigating to This PC, where the drives will be displayed.
+![Verfiying Online Drives](https://github.com/user-attachments/assets/cafadf56-3a4b-443b-ab1e-e70ee57b6e85)
+
+## Step 11: Launching iSCSI Initiator 
+- Repeat the same **Steps 1 to 5** for NodeB
+
+
 
 
 
