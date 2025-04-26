@@ -410,11 +410,13 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.
 
     ![Error](https://github.com/user-attachments/assets/3939637b-b8af-4954-9490-b725a57605cf)
+    ![Error2](https://github.com/user-attachments/assets/53368fe5-cbbd-4c9b-b0b7-31e3b65569f9)
+
 
     ![Uninstalling Software](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)  
     - Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
-16. **Additional Steps for Node Connection**  
+17. **Additional Steps for Node Connection**  
     - After starting VMware:  
       - Create the Firewall rule again on `NodeA`.  
       - Reconnect the drives using the **iSCSI Initiator**.  
