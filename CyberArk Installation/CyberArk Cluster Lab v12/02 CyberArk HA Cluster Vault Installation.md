@@ -333,68 +333,97 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 # CyberArk HA Cluster Installation
 
- Copy paste all the CyberArk components. Right click 'Setup' select "Run as administrator"
- ![Run as administrator](https://github.com/user-attachments/assets/b850e8b9-59bb-4160-8a8b-1554bf87ce91)
+## Steps for Installation
 
-Welcome to CyberArk Digital Vault 12.0.0 Setup, click "Next"
-![CyberArk Digital Vault Setup](https://github.com/user-attachments/assets/c6228e48-ff71-4468-94d3-498b7c612faf)
+1. **Run Setup**  
+   - Copy all CyberArk components.  
+   - Right-click `Setup` and select **"Run as administrator"**.  
+   ![Run as administrator](https://github.com/user-attachments/assets/b850e8b9-59bb-4160-8a8b-1554bf87ce91)  
 
-Click 'yes' for License Agreement.
-![License Agreement](https://github.com/user-attachments/assets/5c91cf20-9bf5-4bee-9374-3cb5d72b39af)
+2. **CyberArk Digital Vault Setup**  
+   - Welcome to **CyberArk Digital Vault 12.0.0 Setup**, click **"Next"**.  
+   ![CyberArk Digital Vault Setup](https://github.com/user-attachments/assets/c6228e48-ff71-4468-94d3-498b7c612faf)  
 
-User information 
--> Name: `CyberArkClusterLab`
--> Comapany: `CyberArkClusterLab.com`
-![User information ](https://github.com/user-attachments/assets/9e531bdd-7cce-4b47-87ea-db1225aad8b7)
+3. **License Agreement**  
+   - Click **"Yes"** to accept the license agreement.  
+   ![License Agreement](https://github.com/user-attachments/assets/5c91cf20-9bf5-4bee-9374-3cb5d72b39af)  
 
-Vault Installation Mode 
-- Click **Cluster-node Vault Installation**
-![Vault Installation Mode ](https://github.com/user-attachments/assets/9b418cb1-4e1d-47a9-9664-f372cd90daae)
+4. **User Information**  
+   - Enter the following details:  
+     - Name: `CyberArkClusterLab`  
+     - Company: `CyberArkClusterLab.com`  
+   ![User Information](https://github.com/user-attachments/assets/9e531bdd-7cce-4b47-87ea-db1225aad8b7)  
 
-Choose Destination location, keep the default path. Click 'Next'
-![image](https://github.com/user-attachments/assets/b61e679f-7bb7-4c13-81b2-a9c6424a376a)
+5. **Vault Installation Mode**  
+   - Select **Cluster-node Vault Installation**.  
+   ![Vault Installation Mode](https://github.com/user-attachments/assets/9b418cb1-4e1d-47a9-9664-f372cd90daae)  
 
-Choose Safe location, Created the 'safes' folder in Share drive. Browse the path and select 'Next'
-![Choose Safe location](https://github.com/user-attachments/assets/04388cb5-f2a0-4100-8c57-a04b77c770f1)
+6. **Choose Destination Location**  
+   - Keep the default path and click **"Next"**.  
+   ![Destination Location](https://github.com/user-attachments/assets/b61e679f-7bb7-4c13-81b2-a9c6424a376a)  
 
-License File Path, Browse the Destination folder 'License' and click 'Next'
-![License File Path](https://github.com/user-attachments/assets/37ff36ec-1cb0-45a7-9660-10abe6f9a510)
+7. **Choose Safe Location**  
+   - Create a `safes` folder in a shared drive, browse the path, and click **"Next"**.  
+   ![Safe Location](https://github.com/user-attachments/assets/04388cb5-f2a0-4100-8c57-a04b77c770f1)  
 
-Operator CD Path, Browse the Destination folder 'DemoOperatorKeys' and click 'Next'
-![Operator CD Path](https://github.com/user-attachments/assets/0ac0cb8d-a326-458a-bcbe-5468e766bc5b)
+8. **License File Path**  
+   - Browse the destination folder `License` and click **"Next"**.  
+   ![License File Path](https://github.com/user-attachments/assets/37ff36ec-1cb0-45a7-9660-10abe6f9a510)  
 
-Configuring the remote control agent, select "Skip Remote Control Agent Configuration". Click 'Next'
-![Configuring the remote control agent](https://github.com/user-attachments/assets/019a131b-9084-4a90-92cf-155995a77c2a)
+9. **Operator CD Path**  
+   - Browse the destination folder `DemoOperatorKeys` and click **"Next"**.  
+   ![Operator CD Path](https://github.com/user-attachments/assets/0ac0cb8d-a326-458a-bcbe-5468e766bc5b)  
 
-Vault Server Machine Hardening, Click 'Next'
-![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)
+10. **Remote Control Agent Configuration**  
+    - Select **"Skip Remote Control Agent Configuration"** and click **"Next"**.  
+    ![Remote Control Agent Configuration](https://github.com/user-attachments/assets/019a131b-9084-4a90-92cf-155995a77c2a)  
 
-Select Program Folder, Program folders: `CyberArk Digital Vault`. After click 'Next', setup starts performing Vault Hardening. Will start installing vault database. 
-![Select Program Folder](https://github.com/user-attachments/assets/a6314632-6147-4256-a68e-7c08d1cad136)
+11. **Vault Server Machine Hardening**  
+    - Click **"Next"**.  
+    ![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)  
 
-Before entering the Master password and Administrator password. Browse private Ark folder navigate to 'bdparm'. Copy past the 'bdparm.ini' file into desktop and add below Firewall rule line and replace the file. 
-Firewall rule `AllowNonStandardFWAddress=[192.168.137.10],Yes,3260:outbound/tcp,inbound/tcp`
-File Path `C:\Program Files (x86)\PrivateArk\Server\Conf` file name 'dbparm.ini'
-Note: By adding Firewall rule it won't block the communication between storage. 
-![dbparm FW update](https://github.com/user-attachments/assets/3f511a86-6ae3-4478-9bc4-3f09869e5074)
+12. **Select Program Folder**  
+    - Program Folder: `CyberArk Digital Vault`.  
+    - Click **"Next"** to start Vault Hardening and install the vault database.  
+    ![Select Program Folder](https://github.com/user-attachments/assets/a6314632-6147-4256-a68e-7c08d1cad136)  
 
-Now we can enter the 'Master password and Administrator password' and click 'Next'
-Master password: `P@ssw0rd123`
-Administrator password: `Secur1tyP@ss`
-!['Master password and Administrator password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)
+13. **Firewall Configuration**  
+    - Before entering **Master password** and **Administrator password**, perform the following:  
+      - Navigate to the private `Ark` folder and copy `dbparm.ini` to your desktop.  
+      - Add the following Firewall rule:  
+        ```plaintext
+        AllowNonStandardFWAddress=[192.168.137.10],Yes,3260:outbound/tcp,inbound/tcp
+        ```  
+      - Replace the updated `dbparm.ini` file in:  
+        `C:\Program Files (x86)\PrivateArk\Server\Conf`.  
+      - **Note**: Adding the Firewall rule ensures communication between storage is not blocked.  
+      ![Firewall Rule Update](https://github.com/user-attachments/assets/3f511a86-6ae3-4478-9bc4-3f09869e5074)  
 
-Got below error. "Failed to start service PrivateArk Server"
-![Failed to start PrivateArk Server](https://github.com/user-attachments/assets/e82f40d0-0045-4f9a-abca-5922cdb2769d)
-Uninstalling the software
-![image](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)
+14. **Password Configuration**  
+    - Enter the following passwords:  
+      - Master password: `P@ssw0rd123`  
+      - Administrator password: `Secur1tyP@ss`  
+    - Click **"Next"**.  
+    ![Master and Administrator Password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)  
 
-Resolution Article: https://community.cyberark.com/s/article/00004319
-Will try below password, due to password complexity got error. will reinstall the setup. 
-- X7B92D6A
-- M9P4L3Q8
+15. **Error Handling**  
+    - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.  
+    ![Uninstalling Software](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)  
+    - Refer to the [resolution article](https://community.cyberark.com/s/article/00004319).  
 
+16. **Additional Steps for Node Connection**  
+    - After starting VMware:  
+      - Create the Firewall rule again on `NodeA`.  
+      - Reconnect the drives using the **iSCSI Initiator**.  
 
+## Reinstallation Notes  
+- If password complexity issues occur during installation, try passwords:  
+  - `X7B92D6A`  
+  - `M9P4L3Q8`
 
+---
+
+Let me know if you need any further revisions or refinements!
 
 
 
