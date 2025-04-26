@@ -379,7 +379,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     ![Remote Control Agent Configuration](https://github.com/user-attachments/assets/019a131b-9084-4a90-92cf-155995a77c2a)  
 
 11. **Vault Server Machine Hardening**  
-    - During the vault hardening process, retain the default settings without selecting the Do not hardening checkbox. Click **"Next"** to proceed.  
+    - During the vault hardening process, retain the default settings without selecting the 'Do not hardening the machine' checkbox. Click **"Next"** to proceed.  
     ![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)
 
 12. **Select Program Folder**  
