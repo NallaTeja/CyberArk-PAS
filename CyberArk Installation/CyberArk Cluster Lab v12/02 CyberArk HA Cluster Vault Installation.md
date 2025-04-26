@@ -406,8 +406,11 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     - Click **"Next"**.  
     ![Master and Administrator Password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)  
 
-15. **Error Handling**  
-    - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.  
+15. **Error Handling**
+    - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.
+
+    ![Error](https://github.com/user-attachments/assets/3939637b-b8af-4954-9490-b725a57605cf)
+
     ![Uninstalling Software](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)  
     - Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
