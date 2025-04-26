@@ -401,8 +401,8 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 14. **Password Configuration**  
     - Enter the following passwords:  
-      - Master password: `P@ssw0rd123`  
-      - Administrator password: `Secur1tyP@ss`  
+      - Master password: `M1st5rpwD`  
+      - Administrator password: `A4min1pwD`  
     - Click **"Next"**.  
     ![Master and Administrator Password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)  
 
