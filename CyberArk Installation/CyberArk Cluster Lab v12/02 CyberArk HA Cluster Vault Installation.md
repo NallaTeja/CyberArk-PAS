@@ -379,8 +379,8 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     ![Remote Control Agent Configuration](https://github.com/user-attachments/assets/019a131b-9084-4a90-92cf-155995a77c2a)  
 
 11. **Vault Server Machine Hardening**  
-    - Click **"Next"**.  
-    ![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)  
+    - During the vault hardening process, retain the default settings without selecting the Do not hardening checkbox. Click **"Next"** to proceed.  
+    ![Vault Server Machine Hardening](https://github.com/user-attachments/assets/d2fcbc72-da15-4c47-b7a8-17092a55450e)
 
 12. **Select Program Folder**  
     - Program Folder: `CyberArk Digital Vault`.  
@@ -389,7 +389,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 13. **Firewall Configuration**  
     - Before entering **Master password** and **Administrator password**, perform the following:  
-      - Navigate to the private `Ark` folder and copy `dbparm.ini` to your desktop.  
+      - Navigate to the `PrivateArk` folder and copy `dbparm.ini` to your desktop.  
       - Add the following Firewall rule:  
         ```plaintext
         AllowNonStandardFWAddress=[192.168.137.10],Yes,3260:outbound/tcp,inbound/tcp
@@ -409,7 +409,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 15. **Error Handling**  
     - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.  
     ![Uninstalling Software](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)  
-    - Refer to the [resolution article](https://community.cyberark.com/s/article/00004319).  
+    - Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
 16. **Additional Steps for Node Connection**  
     - After starting VMware:  
