@@ -1,11 +1,3 @@
-# Example with Text Colors
-
-Here is some normal text.
-
-<span style="color: green;">This text is green.</span>
-
-Here is more normal text.
-
 # CyberArk HA Cluster Installation Guide
 ## Table of Contents
 
@@ -444,19 +436,34 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     ![Error](https://github.com/user-attachments/assets/3939637b-b8af-4954-9490-b725a57605cf)
     ![Error2](https://github.com/user-attachments/assets/53368fe5-cbbd-4c9b-b0b7-31e3b65569f9)
 
-    - Tried below password it worked. Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
-
-
+    - Tried below password it worked. Refered to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
 ## Reinstallation Notes  
-- If password complexity issues occur during installation, try passwords:  
+- If password complexity issues occur during installation, try below passwords:  
   - `Tej143Nall7m`  
   - `Tej143A4min7`
 
 16. **Re-Installed CyberArk HA cluster vault**
-    - Followed
+    - Followed steps 1 to 14, HA cluster vault got installed. Don't restart the computer, we need to define the ClusterVault configuration.
+    - Select **No, I will restart my computer later.** and Click **"Finish"**.
+`Image`
 
-
+17. Navigate to Cluster Vault configuation file. 
+`C:\Program Files (x86)\PrivateArk\Server\ClusterVault\Conf`
+![Cluster Vault configuation](https://github.com/user-attachments/assets/63cba044-d67a-4022-ad21-fb4e0026de22)
+```
+[Environment Name]
+ClusterLogicalName= CyberArkClusterLab
+LocalNodeLogicalName= HA-Active
+PeerNodeLogicalName= HA-Passive
+[Networking]
+NetworkCardName= Public
+VirtualIP= 192.168.137.60
+PeerNodePrivateIP= 192.168.137.40
+PeerNodePublicIP= 192.168.137.50
+LocalNodePublicIP= 192.168.137.30
+LocalNodePrivateIP= 192.168.137.20
+```
 
 
 
