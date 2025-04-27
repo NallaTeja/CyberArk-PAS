@@ -412,13 +412,15 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
       - Do the ping test for all the servers. 
       - Navigate to the `PrivateArk` folder and copy `dbparm.ini` to your desktop.  
-      - Add the following Firewall rule:  
+      - Add the following Firewall rule:
+  
         ```plaintext
         AllowNonStandardFWAddress=[192.168.137.10],Yes,3260:outbound/tcp,inbound/tcp
         ```  
       - Replace the updated `dbparm.ini` file in:  
         `C:\Program Files (x86)\PrivateArk\Server\Conf`.  
-      - **Note**: Adding the Firewall rule ensures communication between storage is not blocked.  
+      - **Note**: Adding the Firewall rule ensures communication between storage is not blocked.
+   
       ![Firewall Rule Update](https://github.com/user-attachments/assets/3f511a86-6ae3-4478-9bc4-3f09869e5074)  
 
 14. **Password Configuration**  
