@@ -68,7 +68,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
    ![Rename Ethernet](https://github.com/user-attachments/assets/16a7b1f3-ac5c-4f86-ae3c-7c351f47f30f)
    ![Renamed Successfully](https://github.com/user-attachments/assets/2fb73ec2-5632-4ec0-a7f0-7da592b8317c)
 
-### **Step 3.4: Configure Public Network**
+### **Step 3.4: Configure NodeA Public Network**
 1. Define:
    - **IP Address**: `192.168.137.30`
    - **Subnet Mask**: `255.255.255.0`
@@ -83,7 +83,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
    ![Uncheck Items](https://github.com/user-attachments/assets/0e1e4d8b-3423-44e7-9094-e5b9c350c673)
 
-### **Step 3.5: Configure Private Network**
+### **Step 3.5: Configure NodeA Private Network**
 1. Define:
    - **IP Address**: `192.168.137.20`
    - **Subnet Mask**: `255.255.255.0`
@@ -110,7 +110,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
    ![Rename Ethernet](https://github.com/user-attachments/assets/395d0c94-9cc4-4e1e-ae6b-ab7e1e25a56c)
 
-### **Step 4.3: Configure Public Network**
+### **Step 4.3: Configure NodeB Public Network**
 1. Define:
    - **IP Address**: `192.168.137.50`
    - **Subnet Mask**: `255.255.255.0`
@@ -119,7 +119,7 @@ To install a CyberArk HA Cluster, the following three servers are needed:
 
 3. **Uncheck all connection users** except IPv4 & IPv6.
 
-### **Step 4.4: Configure Private Network**
+### **Step 4.4: Configure NodeB Private Network**
 1. Define:
    - **IP Address**: `192.168.137.40`
    - **Subnet Mask**: `255.255.255.0`
