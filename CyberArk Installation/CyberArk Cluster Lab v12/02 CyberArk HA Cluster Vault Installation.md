@@ -397,7 +397,20 @@ To install a CyberArk HA Cluster, the following three servers are needed:
     ![Select Program Folder](https://github.com/user-attachments/assets/a6314632-6147-4256-a68e-7c08d1cad136)  
 
 13. **Firewall Configuration**  
-    - Before entering **Master password** and **Administrator password**, perform the following:  
+**Important:** Before entering the **Master password** and **Administrator password**, ensure that the firewall settings are correctly configured.
+    - Open **Windows Firewall with Advanced Security**.
+       - **Inbound Rules**: Allow connections for the following:
+         - **Port**: 443, 80, 1858
+         - **Protocol**: TCP
+         - **Action**: Allow the connection
+      - **Outbound Rules**: Allow connections for the following:
+         - **Port**: 443, 80, 1858
+         - **Protocol**: TCP
+         - **Action**: Allow the connection
+
+- Repeat the same steps allow all programs Inbound and Outbound Rules   [Open Windows firewall rule for all 3 servers, enable In & Out bound rules](#open-windows-firewall-rule-for-all-3-servers-enable-in--out-bound-rules)
+
+      - Do the ping test for all the servers. 
       - Navigate to the `PrivateArk` folder and copy `dbparm.ini` to your desktop.  
       - Add the following Firewall rule:  
         ```plaintext
@@ -409,35 +422,30 @@ To install a CyberArk HA Cluster, the following three servers are needed:
       ![Firewall Rule Update](https://github.com/user-attachments/assets/3f511a86-6ae3-4478-9bc4-3f09869e5074)  
 
 14. **Password Configuration**  
-    - Enter the following passwords:  
+    - Enter the following passwords:  (Below password configuration didn't worked, tried 12 alphabetical and numerical values no special characters)
       - Master password: `M1st5rpwD`  
       - Administrator password: `A4min1pwD`  
     - Click **"Next"**.  
     ![Master and Administrator Password](https://github.com/user-attachments/assets/79ae73fd-87a9-41b5-aa9f-b9dd1f0e53fa)  
 
 15. **Error Handling**
-    - If you encounter the error **"Failed to start service PrivateArk Server"**, uninstall the software.
+    - If you encounter the error **"Failed to start service PrivateArk Server"**. Create new VMware Windows servers.
 
     ![Error](https://github.com/user-attachments/assets/3939637b-b8af-4954-9490-b725a57605cf)
     ![Error2](https://github.com/user-attachments/assets/53368fe5-cbbd-4c9b-b0b7-31e3b65569f9)
 
+    - Tried below password it worked. Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
-    ![Uninstalling Software](https://github.com/user-attachments/assets/bdaf43a0-a0e7-4ca2-919d-cb54388d90ea)  
-    - Refer to the [Resolution Article](https://community.cyberark.com/s/article/00004319).  
 
-17. **Additional Steps for Node Connection**  
-    - After starting VMware:  
-      - Create the Firewall rule again on `NodeA`.  
-      - Reconnect the drives using the **iSCSI Initiator**.  
 
 ## Reinstallation Notes  
 - If password complexity issues occur during installation, try passwords:  
-  - `X7B92D6A`  
-  - `M9P4L3Q8`
+  - `Tej143Nall7m`  
+  - `Tej143A4min7`
 
----
+16. **Re-Installed CyberArk HA cluster vault**
+    - Followed
 
-Let me know if you need any further revisions or refinements!
 
 
 
