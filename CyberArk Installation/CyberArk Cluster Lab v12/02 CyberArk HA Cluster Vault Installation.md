@@ -1,3 +1,10 @@
+# Example with Text Colors
+
+Here is some normal text.
+
+<span style="color: green;">This text is green.</span>
+
+Here is more normal text.
 # CyberArk HA Cluster Installation Guide
 ## Table of Contents
 
